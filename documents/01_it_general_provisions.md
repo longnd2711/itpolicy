@@ -1,4 +1,3 @@
-Dưới đây là nội dung triển khai chi tiết cho **Phần I: Quy định chung**. Bạn có thể sao chép trực tiếp nội dung này vào file Word (Tài liệu đính kèm) để trình phê duyệt. Văn phong được viết theo chuẩn hành chính, chuyên nghiệp và chặt chẽ của doanh nghiệp.
 
 ---
 
