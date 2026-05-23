@@ -1,4 +1,7 @@
+<<<<<<< HEAD:documents/01_it_general_provisions.md
 
+=======
+>>>>>>> 26c915bc8b62f20b837ecff071e4b36d2afb4bc4:documents/it_general_provisions.md
 ---
 
 # TÀI LIỆU CHÍNH SÁCH QUẢN TRỊ CÔNG NGHỆ THÔNG TIN
