@@ -50,4 +50,4 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
    * Thiết bị phải đáp ứng tiêu chuẩn bảo mật tối thiểu theo chính sách hiện hành của Công ty.
 2. **Kiểm soát dữ liệu trên thiết bị cá nhân:**
    * Dữ liệu Công ty lưu trữ trên thiết bị cá nhân là tài sản của Công ty.
-   * Khi nhân sự nghỉ việc hoặc thiết bị cá nhân bị mất, BP IT có quyền yêu cầu/thực hiện xóa từ xa/vô hiệu hóa **riêng biệt phần dữ liệu công việc** trên thiết bị đó (thông qua môi trường ứng dụng quản lý công việc được cài đặt sẵn).
+   * Khi nhân sự nghỉ việc hoặc thiết bị cá nhân bị mất, BP IT có quyền yêu cầu/thực hiện xóa từ xa/vô hiệu hóa **riêng biệt phần dữ liệu của Công ty** trên thiết bị đó.
