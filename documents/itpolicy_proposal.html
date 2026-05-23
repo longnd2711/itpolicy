@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title sẽ được cập nhật động bằng Javascript -->
     <title>Đề xuất Chính sách CNTT | HEM EMM</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -94,7 +95,9 @@
     <!-- Global Header -->
     <div class="fixed top-0 right-0 p-6 z-50 pointer-events-none flex items-center gap-3">
         <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
-        <p class="text-xs font-bold text-slate-500 tracking-widest uppercase bg-slate-950/50 px-2 py-1 rounded backdrop-blur-sm">HEM EMM - IT DEPARTMENT | INTERNAL USE ONLY</p>
+        <p class="text-xs font-bold text-slate-500 tracking-widest uppercase bg-slate-950/50 px-2 py-1 rounded backdrop-blur-sm">
+            <span class="var-company">HEM EMM</span> - <span class="var-dept-en">IT DEPARTMENT</span> | INTERNAL USE ONLY
+        </p>
     </div>
 
     <!-- Global Footer (Page Number) -->
@@ -134,7 +137,7 @@
                 </h1>
                 <div class="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto rounded-full mb-8"></div>
                 <p class="text-lg md:text-xl text-slate-400 leading-relaxed font-light max-w-3xl">
-                    Xây dựng nền tảng quản trị công nghệ an toàn, hiệu quả và bảo mật, định hướng cho quá trình chuyển đổi số toàn diện của doanh nghiệp.
+                    Xây dựng nền tảng quản trị công nghệ an toàn, hiệu quả và bảo mật, định hướng cho quá trình chuyển đổi số toàn diện của <span class="var-company font-medium text-slate-300">HEM EMM</span>.
                 </p>
                 <button onclick="nextSlide()" class="mt-12 group flex items-center gap-3 px-6 py-3 bg-blue-500 hover:bg-blue-400 text-slate-950 font-bold rounded-full transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)]">
                     Bắt đầu xem đề xuất
@@ -159,7 +162,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="space-y-6 text-lg text-slate-300 leading-relaxed">
                         <p>
-                            Sự bùng nổ của mô hình làm việc linh hoạt và lưu trữ đám mây đi kèm với <strong class="text-blue-400">rủi ro an toàn thông tin</strong> gia tăng đáng kể.
+                            Sự bùng nổ của AI, các mô hình làm việc linh hoạt và nhu cầu lưu trữ, hợp tác đi kèm với <strong class="text-blue-400">rủi ro an toàn thông tin</strong> gia tăng đáng kể.
                         </p>
                         <p>
                             Việc thiết lập một <strong class="text-white border-b border-blue-500">khung quản lý nội bộ về CNTT</strong> không còn là lựa chọn, mà là điều kiện bắt buộc để bảo vệ tài sản doanh nghiệp.
@@ -177,7 +180,7 @@
                                 <span class="px-3 py-1.5 bg-slate-950 border border-slate-800 text-rose-400 text-sm font-semibold rounded-lg flex items-center gap-2 shadow-inner"><i class="fa-solid fa-bug"></i> Mã độc / Ransomware</span>
                                 <span class="px-3 py-1.5 bg-slate-950 border border-slate-800 text-amber-400 text-sm font-semibold rounded-lg flex items-center gap-2 shadow-inner"><i class="fa-solid fa-user-secret"></i> Rò rỉ dữ liệu</span>
                                 <span class="px-3 py-1.5 bg-slate-950 border border-slate-800 text-cyan-400 text-sm font-semibold rounded-lg flex items-center gap-2 shadow-inner"><i class="fa-solid fa-scale-unbalanced"></i> Vi phạm bản quyền</span>
-                                <span class="px-3 py-1.5 bg-slate-950 border border-slate-800 text-purple-400 text-sm font-semibold rounded-lg flex items-center gap-2 shadow-inner"><i class="fa-solid fa-building-shield"></i> Mất uy tín doanh nghiệp</span>
+                                <span class="px-3 py-1.5 bg-slate-950 border border-slate-800 text-purple-400 text-sm font-semibold rounded-lg flex items-center gap-2 shadow-inner"><i class="fa-solid fa-building-shield"></i> Mất uy tín</span>
                             </div>
                         </div>
                     </div>
@@ -205,7 +208,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Vấn đề 1 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
                             <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Quy định" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
@@ -222,10 +224,9 @@
                         </div>
                     </div>
 
-                    <!-- Vấn đề 2 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
-                            <img src="https://images.unsplash.com/photo-1607706189992-eaa571e23164?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Quản lý phần mềm" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Quản lý phần mềm" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent z-10 pointer-events-none"></div>
                         </div>
                         <div class="p-8 flex-1 flex flex-col justify-start relative z-20 -mt-10">
@@ -234,7 +235,7 @@
                             </div>
                             <h3 class="text-xl font-bold text-white mb-3">Thống nhất quản lý phần mềm</h3>
                             <p class="text-slate-400 leading-relaxed text-sm">
-                                Chưa triển khai các quy định về bản quyền phần mềm. Việc nhân viên tự ý cài đặt và sử dụng phần mềm không bản quyền gây ra nhiều sự cố đơn lẻ, mất nhiều thời gian xử lý, rủi ro về gián đoạn vận hành cao.
+                                Chưa triển khai các quy định về sử dụng phần mềm và bản quyền. Việc nhân viên tự ý cài đặt và sử dụng phần mềm không bản quyền gây ra nhiều sự cố đơn lẻ, mất thời gian xử lý, rủi ro về gián đoạn vận hành cao.
                             </p>
                         </div>
                     </div>
@@ -256,7 +257,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Vấn đề 3 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
                             <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Đánh cắp dữ liệu" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
@@ -268,12 +268,11 @@
                             </div>
                             <h3 class="text-xl font-bold text-white mb-3">Nguy cơ bị thu thập dữ liệu</h3>
                             <p class="text-slate-400 leading-relaxed text-sm">
-                                Nếu không có biện pháp phòng ngừa, nhân viên không được đào tạo, không có IT policy hướng dẫn về bảo mật thông tin, toàn bộ thông tin vận hành của Công ty có thể bị theo dõi, đánh cắp bởi các thế lực thù địch.
+                                Nếu không có biện pháp phòng ngừa, nhân viên không được đào tạo, không có IT policy hướng dẫn, thông tin vận hành có thể bị rò rỉ, đánh cắp mà không thể phát hiện.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Vấn đề 4 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
                             <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Pháp lý" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
@@ -285,7 +284,7 @@
                             </div>
                             <h3 class="text-xl font-bold text-white mb-3">Vi phạm luật bảo vệ dữ liệu cá nhân</h3>
                             <p class="text-slate-400 leading-relaxed text-sm">
-                                Hiện nay Việt Nam đã có Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân. Nếu nhân viên làm rò rỉ thông tin khách hàng do bất cẩn, công ty là bên phải chịu trách nhiệm pháp lý cao nhất.
+                                Việt Nam đã có Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân. Nếu nhân viên làm rò rỉ thông tin do bất cẩn, Công ty là bên phải chịu trách nhiệm pháp lý cao nhất.
                             </p>
                         </div>
                     </div>
@@ -307,7 +306,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Vấn đề 5 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
                             <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Nhân sự nghỉ việc" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
@@ -319,12 +317,11 @@
                             </div>
                             <h3 class="text-xl font-bold text-white mb-3">Lỗ hổng Onboarding / Offboarding</h3>
                             <p class="text-slate-400 leading-relaxed text-sm">
-                                Khi một nhân viên chuẩn bị nghỉ việc mà bộ phận Nhân sự không cảnh báo Trưởng bộ phận khác và IT để thu hồi tài khoản, họ vẫn có thể truy cập vào dữ liệu, email, fanpage, hoặc phần mềm kế toán của công ty.
+                                Khi một nhân viên nghỉ việc mà không có quy trình thu hồi tài khoản, họ vẫn có thể truy cập vào dữ liệu, email, hoặc phần mềm quan trọng của công ty.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Vấn đề 6 -->
                     <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform shadow-lg">
                         <div class="h-56 bg-slate-800 relative overflow-hidden border-b border-slate-700">
                             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" onerror="this.style.display='none'" alt="Máy chủ" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-transform duration-500">
@@ -336,7 +333,7 @@
                             </div>
                             <h3 class="text-xl font-bold text-white mb-3">Lãng phí tài nguyên</h3>
                             <p class="text-slate-400 leading-relaxed text-sm">
-                                Không có quy định về việc sử dụng tài nguyên CNTT có thể dẫn đến việc nhân viên sử dụng một cách bừa bãi (lưu trữ cá nhân, băng thông không phục vụ công việc), gây ảnh hưởng đến hiệu suất chung của hệ thống.
+                                Không có quy định về việc sử dụng tài nguyên CNTT có thể dẫn đến việc nhân viên sử dụng lưu trữ cá nhân, tải băng thông không phục vụ công việc.
                             </p>
                         </div>
                     </div>
@@ -347,13 +344,13 @@
         <!-- ================= SLIDE 6: PHẠM VI ================= -->
         <div class="slide">
             <div class="slide-content max-w-7xl w-full mx-auto">
-                <div class="flex items-center gap-4 mb-10">
+                <div class="flex items-center gap-4 mb-8">
                     <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl shrink-0">
                         <i class="fa-solid fa-border-all"></i>
                     </div>
                     <div>
                         <h2 class="text-3xl font-bold text-white tracking-wide">Phạm Vi Chính Sách Đề Xuất</h2>
-                        <p class="text-slate-500 text-sm mt-1">3 Trụ cột chính trong khung quản trị hạ tầng CNTT</p>
+                        <p class="text-slate-500 text-sm mt-1">3 Trụ cột chính trong khung quản trị CNTT</p>
                     </div>
                 </div>
 
@@ -368,7 +365,7 @@
                                 <i class="fa-solid fa-fingerprint text-cyan-400 shrink-0"></i> Bảo Mật Thông Tin
                             </h3>
                             <p class="text-sm text-slate-400 leading-relaxed">
-                                Chuẩn hóa quy định về độ phức tạp của mật khẩu, yêu cầu mã hóa thiết bị lưu trữ, và phân quyền truy cập hệ thống theo nguyên tắc "đặc quyền tối thiểu" (Least Privilege).
+                                Chuẩn hóa quy định về độ phức tạp của mật khẩu, yêu cầu mã hóa thiết bị lưu trữ, và phân quyền truy cập hệ thống theo nguyên tắc "đặc quyền tối thiểu".
                             </p>
                         </div>
                     </div>
@@ -383,7 +380,7 @@
                                 <i class="fa-solid fa-laptop-code text-blue-400 shrink-0"></i> Tiêu Chuẩn Thiết Bị
                             </h3>
                             <p class="text-sm text-slate-400 leading-relaxed">
-                                Thiết lập quy trình rõ ràng về cấp phát, thu hồi, bảo trì và sử dụng hợp lý tài sản phần cứng, phần mềm của công ty trong và ngoài văn phòng làm việc.
+                                Thiết lập quy trình rõ ràng về cấp phát, thu hồi, bảo trì và sử dụng hợp lý tài sản phần cứng, phần mềm của Công ty.
                             </p>
                         </div>
                     </div>
@@ -398,11 +395,20 @@
                                 <i class="fa-solid fa-cloud-network text-indigo-400 shrink-0"></i> Mạng & Lưu Trữ Đám Mây
                             </h3>
                             <p class="text-sm text-slate-400 leading-relaxed">
-                                Ban hành nguyên tắc kết nối mạng nội bộ (Wi-Fi/LAN), mạng khách, giao thức làm việc từ xa (VPN), và quy định quản lý dữ liệu trên nền tảng Cloud chung.
+                                Ban hành nguyên tắc kết nối mạng nội bộ (Wi-Fi/LAN), mạng khách, giao thức làm việc từ xa (VPN), và quy định quản lý dữ liệu trên nền tảng Cloud.
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <!-- LƯU Ý MỚI THÊM -->
+                <div class="mt-8 p-4 bg-slate-900/60 border border-cyan-500/30 rounded-xl flex items-center gap-3 backdrop-blur-sm shadow-lg w-full">
+                    <i class="fa-solid fa-circle-info text-cyan-400 text-xl shrink-0"></i>
+                    <p class="text-slate-300 text-sm">
+                        <span class="text-white font-semibold">Lưu ý:</span> Phạm vi và phương án thực hiện quản lý chi tiết trong tài liệu đính kèm.
+                    </p>
+                </div>
+
             </div>
         </div>
 
@@ -425,15 +431,15 @@
                             <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-emerald-400 shrink-0"><i class="fa-solid fa-shield-halved"></i></div>
                             <div>
                                 <h4 class="text-white font-bold text-base mb-1">Bảo vệ Tài sản Dữ liệu</h4>
-                                <p class="text-slate-400 text-sm leading-relaxed">Giảm thiểu đáng kể rủi ro tấn công mạng, phần mềm độc hại và nguy cơ rò rỉ thông tin kinh doanh cốt lõi.</p>
+                                <p class="text-slate-400 text-sm leading-relaxed">Giảm thiểu rủi ro tấn công mạng, phần mềm độc hại và nguy cơ rò rỉ thông tin kinh doanh cốt lõi.</p>
                             </div>
                         </div>
                         
                         <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex gap-4 hover:border-sky-500/30 transition-colors">
-                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-sky-400 shrink-0"><i class="fa-solid fa-piggy-bank"></i></div>
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-sky-400 shrink-0"><i class="fa-solid fa-users"></i></div>
                             <div>
-                                <h4 class="text-white font-bold text-base mb-1">Tối Ưu Đầu Tư CNTT</h4>
-                                <p class="text-slate-400 text-sm leading-relaxed">Quản lý tập trung giúp loại bỏ các phần mềm dư thừa, chuẩn hóa cấu hình phần cứng, từ đó tối ưu hóa ngân sách công nghệ.</p>
+                                <h4 class="text-white font-bold text-base mb-1">Nâng Cao Nhận Thức</h4>
+                                <p class="text-slate-400 text-sm leading-relaxed">Xây dựng văn hóa bảo mật, giúp mọi nhân viên hiểu rõ trách nhiệm của mình khi tham gia vào hệ thống kỹ thuật số.</p>
                             </div>
                         </div>
 
@@ -441,7 +447,7 @@
                             <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400 shrink-0"><i class="fa-solid fa-file-contract"></i></div>
                             <div>
                                 <h4 class="text-white font-bold text-base mb-1">Đảm Bảo Tuân Thủ</h4>
-                                <p class="text-slate-400 text-sm leading-relaxed">Nền tảng để doanh nghiệp đáp ứng các tiêu chuẩn bảo mật quốc tế (như ISO 27001) và các luật về bảo vệ dữ liệu cá nhân.</p>
+                                <p class="text-slate-400 text-sm leading-relaxed">Nền tảng để doanh nghiệp đáp ứng các tiêu chuẩn bảo mật quốc tế và các luật về bảo vệ dữ liệu cá nhân.</p>
                             </div>
                         </div>
                     </div>
@@ -451,8 +457,8 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
                         <div class="absolute bottom-6 left-6 right-6">
                             <div class="bg-slate-900/80 backdrop-blur-md border border-slate-700 p-4 rounded-xl">
-                                <h4 class="text-white font-bold mb-1 flex items-center gap-2"><i class="fa-solid fa-users text-emerald-400"></i> Nâng Cao Nhận Thức</h4>
-                                <p class="text-xs text-slate-300">Xây dựng văn hóa bảo mật, giúp mọi nhân viên hiểu rõ trách nhiệm của mình khi tham gia vào hệ thống kỹ thuật số.</p>
+                                <h4 class="text-white font-bold mb-1 flex items-center gap-2"><i class="fa-solid fa-piggy-bank text-emerald-400"></i> Nâng cao hiệu suất</h4>
+                                <p class="text-xs text-slate-300">Áp dụng công nghệ để xử lý thông tin một cách hiệu quả, giảm thời gian lãn phí và tăng năng suất.</p>
                             </div>
                         </div>
                     </div>
@@ -482,20 +488,20 @@
                         <div class="bg-slate-950 border border-slate-700 rounded-2xl p-6 flex flex-col shadow-lg hover:border-purple-500/50 transition-colors group">
                             <div class="w-12 h-12 rounded-full bg-slate-900 border-2 border-purple-500 flex items-center justify-center text-xl font-bold text-purple-400 mb-4 mx-auto group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(168,85,247,0.2)]">1</div>
                             <h3 class="text-center text-white font-bold text-lg mb-2">Tuần 1-2<br><span class="text-purple-400">Phê Duyệt</span></h3>
-                            <p class="text-sm text-slate-400 text-center leading-relaxed">Tổng Giám đốc xem xét, ký quyết định ban hành chính thức văn bản Chính sách CNTT.</p>
+                            <p class="text-sm text-slate-400 text-center leading-relaxed"><span class="var-approver font-medium text-slate-300">Tổng Giám đốc</span> xem xét, ký quyết định ban hành chính thức văn bản Chính sách.</p>
                         </div>
 
                         <!-- Step 2 -->
                         <div class="bg-slate-950 border border-slate-700 rounded-2xl p-6 flex flex-col shadow-lg hover:border-blue-500/50 transition-colors group">
                             <div class="w-12 h-12 rounded-full bg-slate-900 border-2 border-blue-500 flex items-center justify-center text-xl font-bold text-blue-400 mb-4 mx-auto group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(59,130,246,0.2)]">2</div>
-                            <h3 class="text-center text-white font-bold text-lg mb-2">Tuần 3-4<br><span class="text-blue-400">Truyền Thông</span></h3>
+                            <h3 class="text-center text-white font-bold text-lg mb-2">Tuần 2-3<br><span class="text-blue-400">Truyền Thông</span></h3>
                             <p class="text-sm text-slate-400 text-center leading-relaxed">Khởi động chiến dịch truyền thông nội bộ, tổ chức hướng dẫn, đào tạo cho toàn bộ CBNV.</p>
                         </div>
 
                         <!-- Step 3 -->
                         <div class="bg-slate-950 border border-slate-700 rounded-2xl p-6 flex flex-col shadow-lg hover:border-cyan-500/50 transition-colors group">
                             <div class="w-12 h-12 rounded-full bg-slate-900 border-2 border-cyan-500 flex items-center justify-center text-xl font-bold text-cyan-400 mb-4 mx-auto group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(6,182,212,0.2)]">3</div>
-                            <h3 class="text-center text-white font-bold text-lg mb-2">Tuần 5-6<br><span class="text-cyan-400">Áp Dụng</span></h3>
+                            <h3 class="text-center text-white font-bold text-lg mb-2">Tuần 4-6<br><span class="text-cyan-400">Áp Dụng</span></h3>
                             <p class="text-sm text-slate-400 text-center leading-relaxed">IT thiết lập rào cản kỹ thuật (phân quyền, quản lý MDM) để ép buộc tuân thủ quy định mới.</p>
                         </div>
 
@@ -507,6 +513,15 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- LƯU Ý MỚI THÊM -->
+                <div class="mt-10 p-4 bg-slate-900/60 border border-purple-500/30 rounded-xl flex items-center justify-center gap-3 backdrop-blur-sm shadow-lg w-full max-w-3xl mx-auto">
+                    <i class="fa-solid fa-circle-info text-purple-400 text-xl shrink-0"></i>
+                    <p class="text-slate-300 text-sm">
+                        <span class="text-white font-semibold">Lưu ý:</span> Các thay đổi, điều chỉnh trong chính sách cũng sẽ tuân theo lộ trình này.
+                    </p>
+                </div>
+
             </div>
         </div>
 
@@ -533,13 +548,13 @@
                     <h4 class="text-xl font-bold text-white mb-4 border-b border-slate-800 pb-3 inline-block relative z-10">Kiểm Soát Tập Trung & Đồng Bộ</h4>
                     
                     <p class="text-lg text-slate-300 leading-relaxed relative z-10 mb-6">
-                        Mục tiêu thấp nhất sau khi chính sách được ban hành là 100% tài sản công nghệ (Laptop, Mobile, Server) do công ty cấp phát phải được cài đặt phần mềm quản lý và giám sát qua hệ thống tập trung.
+                        Mục tiêu thấp nhất sau khi chính sách được ban hành là 100% tài sản công nghệ do Công ty cấp phát phải được cài đặt phần mềm quản lý và giám sát qua hệ thống tập trung.
                     </p>
                     
                     <div class="bg-blue-500/5 border-l-4 border-blue-500 p-4 rounded-r-xl relative z-10">
                         <p class="text-slate-300 font-medium text-sm md:text-base">
                             <i class="fa-solid fa-check-double text-blue-400 mr-2"></i>
-                            Chỉ số này là lời cam kết của BP IT trong quá trình chuyển đổi số
+                            Chỉ số này là lời cam kết của <span class="var-dept-short font-bold text-blue-300">BP IT</span> trong quá trình chuyển đổi số
                         </p>
                     </div>
                 </div>
@@ -549,7 +564,6 @@
         <!-- ================= SLIDE 10: OUTRO ================= -->
         <div class="slide">
             <div class="slide-content max-w-3xl mx-auto flex flex-col items-center text-center border border-slate-800 bg-slate-900/50 p-12 rounded-3xl backdrop-blur-sm relative overflow-hidden">
-                <!-- Decorative effects -->
                 <div class="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-blue-500/10 to-transparent rotate-12 blur-2xl pointer-events-none"></div>
                 
                 <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-slate-800 border border-slate-700 text-3xl text-white mb-6 relative z-10 shadow-lg">
@@ -561,15 +575,14 @@
                 <div class="w-16 h-1 bg-blue-500 mx-auto rounded-full mb-6 relative z-10"></div>
                 
                 <p class="text-lg text-slate-400 leading-relaxed relative z-10">
-                    Kính đề nghị Tổng Giám đốc xem xét và phê duyệt văn bản Chính sách Công nghệ Thông tin đính kèm để BP IT có cơ sở tiến hành các bước truyền thông và triển khai kỹ thuật.
+                    Kính đề nghị <span class="var-approver font-bold text-white">Tổng Giám đốc</span> xem xét và phê duyệt văn bản Chính sách Công nghệ Thông tin đính kèm để <span class="var-dept-short">BP IT</span> có cơ sở tiến hành các bước truyền thông và triển khai kỹ thuật.
                 </p>
                 
                 <div class="mt-10 pt-8 border-t border-slate-800/80 relative z-10 flex flex-col items-center justify-center gap-2 w-full">
                     <span class="text-sm text-slate-500 uppercase tracking-widest font-bold">Đề xuất bởi</span>
-                    <span class="text-xl text-white font-bold">Bộ phận Công nghệ Thông tin</span>
+                    <span class="text-xl text-white font-bold var-dept">Bộ phận Công nghệ Thông tin</span>
                 </div>
                 
-                <!-- Khu vực nút bấm liên kết -->
                 <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                     <a href="#" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:-translate-y-1 w-full sm:w-auto">
                         <i class="fa-solid fa-file-pdf"></i> Xem Tài Liệu Đính Kèm
@@ -584,6 +597,46 @@
 
     </div>
 
+    <!-- HỆ THỐNG BIẾN TOÀN CỤC BẰNG EXTERNAL JS -->
+    <script>
+        // Cấu hình các biến mặc định (sẽ dùng nếu file variable.js không tồn tại)
+        const defaultVars = {
+            COMPANY_ABBR: "HEM EMM",
+            DEPARTMENT_NAME: "Bộ phận Công nghệ Thông tin",
+            DEPARTMENT_SHORT: "BP IT",
+            DEPARTMENT_EN: "IT DEPARTMENT",
+            APPROVER_TITLE: "Tổng Giám đốc"
+        };
+
+        // Hàm áp dụng các biến vào trong giao diện web
+        function applyVariables() {
+            // Ưu tiên lấy biến từ window (do file variable.js cấu hình) nếu không có thì lấy mặc định
+            const companyAbbr = window.COMPANY_ABBR || defaultVars.COMPANY_ABBR;
+            const deptName = window.DEPARTMENT_NAME || defaultVars.DEPARTMENT_NAME;
+            const deptShort = window.DEPARTMENT_SHORT || window.DEPARTMENT_NAME || defaultVars.DEPARTMENT_SHORT; // Fallback dùng Dept Name
+            const deptEn = window.DEPARTMENT_EN || defaultVars.DEPARTMENT_EN; 
+            const approver = window.APPROVER_TITLE || defaultVars.APPROVER_TITLE;
+
+            // Cập nhật title của trang web
+            document.title = `Đề xuất Chính sách CNTT | ${companyAbbr}`;
+            
+            // Duyệt và cập nhật các class chứa nội dung tương ứng
+            document.querySelectorAll('.var-company').forEach(el => el.innerText = companyAbbr);
+            document.querySelectorAll('.var-dept').forEach(el => el.innerText = deptName);
+            document.querySelectorAll('.var-dept-short').forEach(el => el.innerText = deptShort);
+            document.querySelectorAll('.var-dept-en').forEach(el => el.innerText = deptEn);
+            document.querySelectorAll('.var-approver').forEach(el => el.innerText = approver);
+        }
+
+        // Tạo thẻ script để tải file variable.js một cách tự động
+        const varScript = document.createElement('script');
+        varScript.src = 'variable.js';
+        varScript.onload = applyVariables;    // Gọi khi file variable.js tồn tại và tải xong
+        varScript.onerror = applyVariables;  // Gọi nếu file variable.js không tồn tại 
+        document.head.appendChild(varScript);
+    </script>
+
+    <!-- SCRIPT ĐIỀU KHIỂN SLIDE -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
@@ -601,7 +654,6 @@
         const dots = dotContainer.children;
 
         function updateSlide() {
-            // Hide all slides
             slides.forEach((slide, index) => {
                 slide.classList.remove('active');
                 
@@ -609,22 +661,18 @@
                 const content = slide.querySelector('.slide-content');
                 if(content) {
                     content.style.animation = 'none';
-                    content.offsetHeight; /* trigger reflow */
+                    content.offsetHeight; 
                     content.style.animation = null; 
                 }
 
-                // Update dots
                 if(dots[index]) {
                     dots[index].className = `w-2 h-2 rounded-full transition-all duration-300 flex-shrink-0 ${index === currentSlide ? 'bg-blue-500 w-4 shadow-[0_0_8px_rgba(59,130,246,0.5)]' : 'bg-slate-700 hover:bg-slate-500'}`;
                 }
             });
             
-            // Show current slide
             slides[currentSlide].classList.add('active');
-            // Cuộn slide đang xem về đầu (nếu người dùng đã cuộn dở trước đó)
             slides[currentSlide].scrollTop = 0;
             
-            // Update page number formatting
             const formattedCurrent = String(currentSlide + 1).padStart(2, '0');
             const formattedTotal = String(totalSlides).padStart(2, '0');
             pageNumber.innerText = `${formattedCurrent} / ${formattedTotal}`;
@@ -651,7 +699,6 @@
             }
         }
 
-        // Keyboard navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight') {
                 nextSlide();
@@ -660,9 +707,7 @@
             }
         });
 
-        // Click to next (optional, clicking on background)
         document.getElementById('slides-container').addEventListener('click', (e) => {
-            // Chỉ tiến tới nếu click vào chỗ trống (tránh thẻ button, link, hoặc khi đang bôi đen text)
             if(e.target.tagName !== 'BUTTON' && 
                e.target.tagName !== 'I' && 
                e.target.tagName !== 'A' &&
@@ -674,7 +719,6 @@
             }
         });
 
-        // Initial setup
         updateSlide();
     </script>
 </body>
