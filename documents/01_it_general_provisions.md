@@ -1,7 +1,4 @@
-<<<<<<< HEAD:documents/01_it_general_provisions.md
 
-=======
->>>>>>> 26c915bc8b62f20b837ecff071e4b36d2afb4bc4:documents/it_general_provisions.md
 ---
 
 # TÀI LIỆU CHÍNH SÁCH QUẢN TRỊ CÔNG NGHỆ THÔNG TIN
@@ -45,6 +42,3 @@ Trong tài liệu này, các từ ngữ và từ viết tắt dưới đây đư
 6. **VPN (Virtual Private Network - Mạng riêng ảo):** Cổng kết nối được mã hóa an toàn, cho phép nhân sự từ bên ngoài (quán cafe, nhà riêng) truy cập vào mạng nội bộ của Công ty một cách bảo mật.
 7. **Mã độc (Malware / Ransomware):** Các phần mềm độc hại được thiết kế để phá hoại, theo dõi hoặc mã hóa dữ liệu máy tính nhằm mục đích tống tiền (Ransomware).
 8. **Phishing (Tấn công giả mạo):** Hành vi gian lận thông qua email, tin nhắn giả danh các tổ chức/cá nhân uy tín nhằm lừa nhân viên cung cấp mật khẩu, thông tin cá nhân hoặc nhấp vào liên kết chứa mã độc.
-
----
-*Ghi chú: Nếu bạn thấy nội dung này đã phù hợp, tôi có thể tiếp tục triển khai **Phần II: Tiêu chuẩn & Quản lý thiết bị (Trụ cột 1)** cho bạn.*
