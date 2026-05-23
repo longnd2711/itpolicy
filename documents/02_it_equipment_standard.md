@@ -12,7 +12,7 @@ Nhằm đảm bảo an toàn dữ liệu và tối ưu hóa tài nguyên, việc
    * Nhân sự nhận thiết bị phải kiểm tra tình trạng vật lý, khả năng hoạt động và ký xác nhận vào **Biên bản Bàn giao tài sản CNTT**.
 
 2. **Quy trình Thu hồi (Offboarding):**
-   * Ngay khi có quyết định nghỉ việc hoặc chấm dứt hợp đồng, Bộ phận HR phải lập tức thông báo cho BP IT.
+   * Ngay khi có quyết định nghỉ việc hoặc chấm dứt hợp đồng, Bộ phận HR phải lập tức thông báo và xác nhận phản hồi từ BP IT.
    * Trong vòng **04 giờ làm việc** kể từ thời điểm nhân sự chính thức nghỉ, BP IT thực hiện: 
      * Khóa (Disable) toàn bộ tài khoản Email, phần mềm, hệ thống nội bộ của nhân sự đó.
      * Cắt quyền truy cập từ xa (VPN, Cloud Drive).
@@ -34,7 +34,7 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
 
 1. **Quản lý thiết bị tập trung (MDM):**
    * **100% thiết bị** máy tính, laptop cấp phát cho CBNV phải được cài đặt phần mềm quản lý đầu cuối tập trung (MDM/UEM) của BP IT trước khi bàn giao.
-   * CBNV nghiêm cấm hành vi tự ý gỡ bỏ, vô hiệu hóa phần mềm MDM, phần mềm diệt Virus (Antivirus) hay các công cụ giám sát do IT cài đặt.
+   * CBNV nghiêm cấm hành vi tự ý gỡ bỏ, vô hiệu hóa phần mềm quản lý do IT cài đặt.
 2. **Quyền quản trị máy tính (Admin Rights):**
    * Theo cấu hình tiêu chuẩn, CBNV sẽ sử dụng máy tính dưới quyền người dùng tiêu chuẩn (Standard User). 
    * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi Ticket đến BP IT.
