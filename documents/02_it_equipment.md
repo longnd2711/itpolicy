@@ -7,7 +7,7 @@
 Nhằm đảm bảo an toàn dữ liệu và tối ưu hóa tài nguyên, việc cấp phát và thu hồi tài sản CNTT phải tuân thủ quy trình chặt chẽ:
 
 1. **Quy trình Cấp phát (Onboarding):**
-   * Bộ phận Nhân sự (HR) có trách nhiệm thông báo cho Bộ phận IT (BP IT) bằng văn bản hoặc qua hệ thống nội bộ ít nhất **03 ngày làm việc** trước khi nhân sự mới tiếp nhận công việc.
+   * Bộ phận Nhân sự (HR) có trách nhiệm thông báo cho Bộ phận IT (BP IT) bằng văn bản hoặc qua hệ thống nội bộ ít nhất trước khi nhân sự mới tiếp nhận công việc và xác nhận lại BP IT đã nhận được thông tin.
    * BP IT căn cứ vào tính chất công việc và cấp bậc để chuẩn bị thiết bị (Laptop/PC), cấu hình tiêu chuẩn, khởi tạo email và phân quyền hệ thống tương ứng.
    * Nhân sự nhận thiết bị phải kiểm tra tình trạng vật lý, khả năng hoạt động và ký xác nhận vào **Biên bản Bàn giao tài sản CNTT**.
 
