@@ -2,7 +2,7 @@
 ---
 
 ## PHẦN II: TIÊU CHUẨN & QUẢN LÝ THIẾT BỊ
-Quy định này tuân theo chế độ quản lý và sử dụng Tài sản cố định, công cụ dụng cụ - hiện tại chưa được hoàn thiện.
+Quy định này tuân theo chế độ quản lý và sử dụng Tài sản cố định, công cụ dụng cụ của Công ty - hiện tại chưa được hoàn thiện.
 
 ### Điều 5. Trách nhiệm Quản lý & Sử dụng thiết bị
 Để đảm bảo phân công rõ ràng trong việc quản lý và sử dụng thiết bị công nghệ thông tin
@@ -63,7 +63,7 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
    * Nghiêm cấm CBNV tự ý gỡ bỏ, vô hiệu hóa phần mềm quản lý do IT cài đặt.
 2. **Quyền quản trị máy tính (Admin Rights):**
    * Theo cấu hình tiêu chuẩn, CBNV sẽ sử dụng máy tính dưới quyền người dùng tiêu chuẩn (Standard User). 
-   * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi Ticket đến BP IT.
+   * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi thông báo đến BP IT.
 3. **Tuyệt đối không sử dụng phần mềm vi phạm bản quyền:**
    * Chỉ những phần mềm do BP IT phê duyệt và cung cấp bản quyền mới được phép hoạt động trên thiết bị công ty.
    * Nghiêm cấm mọi hành vi tải, cài đặt, sử dụng các phần mềm bẻ khóa (Crack, Keygen, Patch, Pirated software). Nếu Công ty bị phạt từ các cơ quan thanh tra bản quyền do lỗi cố tình cài đặt của cá nhân, cá nhân đó phải hoàn toàn chịu trách nhiệm bồi thường thiệt hại.
@@ -72,8 +72,8 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
 Đối với các trường hợp được sự đồng ý của Ban Điều Hành cho phép sử dụng thiết bị cá nhân (Laptop, iPad, Điện thoại thông minh) để xử lý công việc và truy cập dữ liệu nội bộ:
 
 1. **Điều kiện kết nối an toàn:** 
-   * Thiết bị cá nhân phải được đăng ký thông tin với BP IT trước khi truy cập mạng nội bộ.
-   * Thiết bị phải đáp ứng tiêu chuẩn bảo mật tối thiểu theo chính sách hiện hành của Công ty.
+   * Thiết bị cá nhân phải được đăng ký thông tin với BP IT trước khi truy cập dữ liệu nội bộ.
+   * Thiết bị phải đáp ứng tiêu chuẩn bảo mật - do BP IT kiểm tra, đánh giá định kỳ.
 2. **Kiểm soát dữ liệu trên thiết bị cá nhân:**
    * Dữ liệu Công ty lưu trữ trên thiết bị cá nhân là tài sản của Công ty.
    * Khi nhân sự nghỉ việc hoặc thiết bị cá nhân bị mất, BP IT có quyền yêu cầu/thực hiện xóa từ xa/vô hiệu hóa **riêng biệt phần dữ liệu của Công ty** trên thiết bị đó.
@@ -91,7 +91,7 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
 Để tối ưu hóa quy trình vận hành và xử lý nhanh các sự cố nhỏ, BP IT có các quyền hạn và trách nhiệm sau:
 
 1.  **Quyền hạn về chi phí vận hành nhỏ lẻ:**
-    *   BP IT được quyền chủ động quyết định và thực hiện các khoản chi phí sửa chữa, mua sắm linh kiện thay thế nhỏ lẻ (chuột, bàn phím phổ thông, dây cáp mạng, đầu nối, keo tản nhiệt...) có giá trị **dưới 200.000 VNĐ/vụ việc**.
+    *   BP IT được quyền chủ động quyết định và thực hiện các khoản chi phí sửa chữa, mua sắm linh kiện thay thế nhỏ lẻ (chuột, bàn phím phổ thông, đổ mực máy in, dây cáp mạng, đầu nối, keo tản nhiệt...) có giá trị **dưới 200.000 VNĐ/vụ việc**.
     *   Các chi phí này sẽ được tổng hợp và làm thủ tục hoàn ứng/thanh toán theo định kỳ tháng với Phòng Tài chính Kế toán (có đầy đủ hóa đơn/chứng từ theo quy định).
 2.  **Lập kế hoạch chi tiêu:**
     *   Hàng năm/quý, BP IT có trách nhiệm lập Dự toán ngân sách CNTT (IT Budget) bao gồm: Chi phí bản quyền phần mềm, chi phí bảo trì hệ thống, và kế hoạch mua sắm thiết bị dự phòng.
