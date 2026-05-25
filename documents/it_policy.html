@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài liệu Chính sách Quản trị Công nghệ Thông tin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Định dạng chuẩn văn bản hành chính Việt Nam */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f3f4f6;
+            color: #000;
+            line-height: 1.5;
+        }
+        .a4-container {
+            max-width: 21cm;
+            min-height: 29.7cm;
+            margin: 2rem auto;
+            background: white;
+            padding: 2cm;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin-bottom: 0.5rem;
+            text-align: justify;
+        }
+        .part-title {
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+        }
+        .article-title {
+            font-weight: bold;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        li {
+            text-align: justify;
+            margin-bottom: 0.25rem;
+        }
+        .page-break {
+            page-break-before: always;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px dashed #ccc;
+        }
+        
+        /* Chế độ in ấn */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .a4-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+            .page-break {
+                border-top: none;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-container">
+        <!-- HEADER TÀI LIỆU -->
+        <div class="text-center mb-6">
+            <h1 class="text-xl font-bold uppercase mb-2">TÀI LIỆU CHÍNH SÁCH QUẢN TRỊ CÔNG NGHỆ THÔNG TIN</h1>
+            <p><strong>Mã tài liệu:</strong> IT-POL-001 | <strong>Phiên bản:</strong> 1.0</p>
+            <p><strong>Ngày ban hành:</strong> [Ngày/Tháng/Năm] | <strong>Đơn vị soạn thảo:</strong> Bộ phận Công nghệ Thông tin (BP IT)</p>
+        </div>
+        <hr class="border-t-2 border-black w-1/3 mx-auto mb-6">
+
+        <!-- PHẦN I -->
+        <h2 class="part-title">PHẦN I: QUY ĐỊNH CHUNG</h2>
+        
+        <h3 class="article-title">Điều 1. Mục đích</h3>
+        <p>Chính sách Quản trị Công nghệ Thông tin (CNTT) này được ban hành nhằm:</p>
+        <ol>
+            <li><strong>Thiết lập khung chuẩn mực:</strong> Xây dựng các nguyên tắc, tiêu chuẩn trong việc quản lý, cấp phát và sử dụng tài nguyên CNTT của Công ty.</li>
+            <li><strong>Bảo vệ tài sản và dữ liệu:</strong> Ngăn chặn các rủi ro về rò rỉ dữ liệu, tấn công mạng, mất mát thông tin kinh doanh cốt lõi và tài sản vật lý của Công ty.</li>
+            <li><strong>Đảm bảo tính tuân thủ:</strong> Hướng dẫn toàn thể nhân sự cách thức làm việc trên môi trường số một cách an toàn, đúng quy định pháp luật và văn hóa doanh nghiệp.</li>
+            <li><strong>Tối ưu hóa hiệu suất:</strong> Đảm bảo hệ thống vận hành xuyên suốt, ổn định, tránh lãng phí tài nguyên mạng, lưu trữ và thiết bị.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 2. Đối tượng và Phạm vi áp dụng</h3>
+        <ol>
+            <li><strong>Đối tượng áp dụng:</strong>
+                <ul>
+                    <li>Toàn bộ Cán bộ nhân viên (CBNV) chính thức, nhân viên thử việc, thực tập sinh, và người lao động bán thời gian làm việc tại Công ty.</li>
+                    <li>Các đối tác, nhà cung cấp, nhà thầu, hoặc bên thứ ba được cấp quyền truy cập vào hệ thống mạng, phần mềm, hoặc cơ sở dữ liệu của Công ty.</li>
+                </ul>
+            </li>
+            <li><strong>Phạm vi áp dụng:</strong>
+                <ul>
+                    <li>Bao gồm tất cả các tài sản CNTT do Công ty sở hữu, thuê hoặc quản lý (phần cứng, phần mềm, hệ thống mạng, tài khoản đám mây).</li>
+                    <li>Áp dụng tại văn phòng Công ty, các chi nhánh và mọi không gian làm việc từ xa (Work from home/Công tác) khi nhân sự có kết nối vào hệ thống nội bộ của Công ty.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 3. Căn cứ ban hành</h3>
+        <p>Chính sách này được xây dựng dựa trên sự tuân thủ các văn bản pháp luật hiện hành và quy định nội bộ, bao gồm:</p>
+        <ul>
+            <li>Bộ luật Lao động của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.</li>
+            <li>Các quy định về an toàn thông tin và an ninh mạng của pháp luật hiện hành.</li>
+            <li>Nội quy lao động và Thỏa ước lao động tập thể của Công ty.</li>
+            <li>Quy định về bảo mật thông tin đã ban hành tại Công ty.</li>
+            <li>Cam kết bảo mật thông tin Công ty của Người lao động.</li>
+        </ul>
+
+        <h3 class="article-title">Điều 4. Giải thích từ ngữ</h3>
+        <p>Trong tài liệu này, các từ ngữ và từ viết tắt dưới đây được hiểu như sau:</p>
+        <ol>
+            <li><strong>Tài nguyên/Tài sản CNTT:</strong> Bao gồm phần cứng (máy tính để bàn, laptop, màn hình, máy chủ, thiết bị mạng...), phần mềm, tài khoản email, tài khoản hệ thống nội bộ, hệ thống đám mây (Cloud) và toàn bộ dữ liệu được tạo ra trong quá trình làm việc tại Công ty.</li>
+            <li><strong>Thiết bị Công nghệ Thông tin (TBIT):</strong> Là tập hợp các thiết bị điện tử có khả năng thu thập, xử lý, lưu trữ và truyền tải thông tin dưới dạng số.</li>
+            <li><strong>Thiết bị đầu cuối (Endpoint):</strong> Là các thiết bị vật lý ở điểm cuối của mạng lưới giao tiếp (ví dụ: máy tính xách tay, điện thoại di động, máy tính bảng) do người dùng trực tiếp sử dụng.</li>
+            <li><strong>Dữ liệu nhạy cảm / Dữ liệu mật:</strong> Bao gồm thông tin cá nhân của khách hàng/nhân viên, bí mật thương mại, chiến lược kinh doanh, báo cáo tài chính, mã nguồn, mật khẩu hệ thống và các thông tin chưa được công bố công khai của Công ty.</li>
+            <li><strong>BYOD (Bring Your Own Device):</strong> Chính sách cho phép nhân sự sử dụng thiết bị công nghệ cá nhân (điện thoại, máy tính cá nhân) để phục vụ cho mục đích công việc và truy cập vào hệ thống Công ty.</li>
+            <li><strong>MDM (Mobile Device Management) / UEM (Unified Endpoint Management):</strong> Phần mềm hoặc hệ thống quản trị thiết bị tập trung, cho phép BP IT giám sát, quản lý cấu hình, cài đặt ứng dụng và bảo vệ dữ liệu trên các thiết bị từ xa.</li>
+            <li><strong>VPN (Virtual Private Network - Mạng riêng ảo):</strong> Cổng kết nối được mã hóa an toàn, cho phép nhân sự từ bên ngoài (quán cafe, nhà riêng) truy cập vào mạng nội bộ của Công ty một cách bảo mật.</li>
+            <li><strong>Mã độc (Malware / Ransomware):</strong> Các phần mềm độc hại được thiết kế để phá hoại, theo dõi hoặc mã hóa dữ liệu máy tính nhằm mục đích tống tiền (Ransomware).</li>
+            <li><strong>Phishing (Tấn công giả mạo):</strong> Hành vi gian lận thông qua email, tin nhắn giả danh các tổ chức/cá nhân uy tín nhằm lừa nhân viên cung cấp mật khẩu, thông tin cá nhân hoặc nhấp vào liên kết chứa mã độc.</li>
+        </ol>
+
+        <!-- PHẦN II -->
+        <h2 class="part-title">PHẦN II: TIÊU CHUẨN & QUẢN LÝ THIẾT BỊ</h2>
+        <p><em>Quy định này tuân theo chế độ quản lý và sử dụng Tài sản cố định, công cụ dụng cụ của Công ty - hiện tại chưa được hoàn thiện.</em></p>
+
+        <h3 class="article-title">Điều 5. Trách nhiệm Quản lý & Sử dụng thiết bị</h3>
+        <p>Để đảm bảo phân công rõ ràng trong việc quản lý và sử dụng thiết bị công nghệ thông tin</p>
+        <ol>
+            <li><strong>Đơn vị quản lý:</strong> Bộ phận Công nghệ thông tin (BP IT) là Đơn vị quản lý (ĐVQL) toàn bộ Thiết bị Công nghệ thông tin (TBIT) trong Công ty. BP IT có trách nhiệm theo dõi, điều động TBIT giữa các đơn vị, phối hợp Đơn vị sử dụng (ĐVSD) kiểm tra tình trạng, đề xuất giải pháp sử dụng TBIT hợp lý.</li>
+            <li><strong>Đơn vị sử dụng:</strong> Là Đơn vị được giao tiếp nhận và chịu trách nhiệm trong quá trình sử dụng TBIT.
+                <ul>
+                    <li>Đối với TBIT dùng chung bởi 02 Đơn vị trở lên: Đơn vị nơi đặt thiết bị trực tiếp, hoặc có tần suất sử dụng cao nhất sẽ được chỉ định làm ĐVSD chính (chịu trách nhiệm bảo quản và báo cáo sự cố). ĐVSD chính có quyền ưu tiên sắp xếp lịch sử dụng thiết bị để phục vụ công việc, nhưng không được cản trở quyền sử dụng hợp lý của các đơn vị khác.</li>
+                    <li>Đối với TBIT hệ thống, hạ tầng dùng chung toàn Công ty (Hệ thống Server, mạng LAN, hệ thống Wifi...): BP IT đóng vai trò vừa là ĐVQL vừa là ĐVSD trực tiếp.</li>
+                </ul>
+            </li>
+            <li><strong>Công tác thay đổi người dùng và Bàn giao TBIT:</strong> Do đặc thù về bảo mật dữ liệu mạng và an toàn hệ thống, ĐVSD không được tự ý bàn giao hoặc thay đổi người trực tiếp sử dụng TBIT (đối với thiết bị giao đích danh cho cá nhân).</li>
+        </ol>
+
+        <h3 class="article-title">Điều 6. Mua sắm, Nâng cấp và Sửa chữa thiết bị</h3>
+        <p>Để đảm bảo tính đồng bộ và hiệu quả của hệ thống, quy trình mua sắm và bảo trì được quy định như sau:</p>
+        <ol>
+            <li><strong>Mua sắm mới:</strong>
+                <ul>
+                    <li>Căn cứ vào kế hoạch nhân sự và nhu cầu thực tế của các phòng ban, BP IT lập đề xuất mua sắm thiết bị theo tiêu chuẩn cấu hình phù hợp với từng vị trí công việc.</li>
+                    <li>Mọi thiết bị CNTT mua mới phải được BP IT kiểm tra kỹ thuật và cập nhật vào hệ thống quản lý trước khi bàn giao cho người sử dụng.</li>
+                </ul>
+            </li>
+            <li><strong>Nâng cấp thiết bị:</strong>
+                <ul>
+                    <li>Việc nâng cấp linh kiện chỉ được thực hiện khi thiết bị hiện tại không đáp ứng được yêu cầu công việc hoặc hiệu suất giảm sút rõ rệt.</li>
+                    <li>BP IT chịu trách nhiệm đánh giá kỹ thuật và đề xuất phương án nâng cấp tối ưu về hiệu quả và chi phí cho Ban Điều Hành.</li>
+                </ul>
+            </li>
+            <li><strong>Sửa chữa:</strong>
+                <ul>
+                    <li>Khi có sự cố phần cứng, CBNV không được tự ý mang thiết bị ra ngoài sửa chữa. Phải gửi yêu cầu hỗ trợ cho BP IT.</li>
+                    <li><strong>Sửa chữa nội bộ:</strong> BP IT trực tiếp xử lý các lỗi phần mềm và hư hỏng linh kiện nhẹ.</li>
+                    <li><strong>Sửa chữa bên ngoài:</strong> Đối với các hư hỏng nặng hoặc thiết bị còn bảo hành, BP IT đầu mối liên hệ nhà cung cấp hoặc đơn vị dịch vụ. Các chi phí phát sinh phải có báo giá và được phê duyệt theo quy định tài chính của Công ty.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 7. Quy định về Cấp phát và Thu hồi thiết bị</h3>
+        <p>Nhằm đảm bảo an toàn dữ liệu và tối ưu hóa tài nguyên, việc cấp phát và thu hồi tài sản CNTT phải tuân thủ quy trình chặt chẽ:</p>
+        <ol>
+            <li><strong>BP IT chịu trách nhiệm cấp phát/thu hồi thiết bị:</strong></li>
+            <li><strong>Quy trình Cấp phát:</strong>
+                <ul>
+                    <li>Bộ phận Nhân sự có trách nhiệm thông báo cho BP IT trước khi nhân sự mới tiếp nhận công việc và xác nhận lại BP IT đã nhận được thông tin.</li>
+                    <li>BP IT căn cứ vào tính chất công việc và cấp bậc để chuẩn bị thiết bị (Laptop/Desktop), cấu hình tiêu chuẩn, khởi tạo email và phân quyền hệ thống tương ứng.</li>
+                    <li>Nhân sự nhận thiết bị phải kiểm tra tình trạng vật lý, khả năng hoạt động và ký xác nhận vào <strong>Biên bản Bàn giao tài sản CNTT</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>Quy trình Thu hồi:</strong>
+                <ul>
+                    <li>Khi có thông tin nhân sự chuẩn bị nghỉ việc, Bộ phận Nhân sự phải lưu ý BP IT theo dõi, thực hiện các biện pháp sao lưu, tránh mất mát dữ liệu.</li>
+                    <li>Ngay khi có quyết định nghỉ việc hoặc chấm dứt hợp đồng, Bộ phận Nhân sự phải lập tức thông báo và xác nhận phản hồi từ BP IT. Bộ phận IT thực hiện:
+                        <ul>
+                            <li>Khóa/vô hiệu hóa toàn bộ tài khoản Email, phần mềm, hệ thống nội bộ của nhân sự đó.</li>
+                            <li>Cắt quyền truy cập từ xa (VPN, Cloud Drive).</li>
+                        </ul>
+                    </li>
+                    <li>Nhân sự nghỉ việc có trách nhiệm bàn giao lại nguyên trạng thiết bị phần cứng cho BP IT. Các dữ liệu, tài khoản liên quan sẽ được BP IT bàn giao cho Quản lý trực tiếp và tiến hành xóa trắng thiết bị theo chuẩn an toàn để cấp phát cho người sử dụng tiếp theo.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 8. Sử dụng thiết bị do Công ty cấp phát</h3>
+        <p>Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công việc. CBNV có nghĩa vụ sử dụng đúng mục đích và bảo vệ tài sản:</p>
+        <ol>
+            <li><strong>Trách nhiệm bảo quản vật lý:</strong>
+                <ul>
+                    <li>Không để thiết bị tại các khu vực thiếu an toàn (trong xe ô tô không người trông, nơi công cộng, nơi có nhiệt độ/độ ẩm khắc nghiệt).</li>
+                    <li>Trong trường hợp xảy ra rơi vỡ, hỏng hóc hoặc mất cắp, CBNV phải báo cáo ngay lập tức cho BP IT và Quản lý trực tiếp (chậm nhất trong vòng 02 giờ) để kịp thời khóa thiết bị từ xa, chặn rò rỉ dữ liệu.</li>
+                </ul>
+            </li>
+            <li><strong>Hành vi nghiêm cấm:</strong>
+                <ul>
+                    <li>Sử dụng thiết bị của Công ty để truy cập, lưu trữ, chỉnh sửa, phát tán các nội dung vi phạm pháp luật.</li>
+                    <li>Sử dụng thiết bị của Công ty để để thực hiện các hoạt động nằm ngoài chức năng, nhiệm vụ được Công ty giao.</li>
+                    <li>Cho mượn, cho thuê, cầm cố hoặc cho phép người ngoài (bao gồm cả thành viên gia đình) sử dụng máy tính của Công ty.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 9. Cài đặt và Quản lý Phần mềm</h3>
+        <p>Đây là nguyên tắc bắt buộc nhằm ngăn chặn rủi ro lây nhiễm Ransomware, mã độc và vi phạm pháp luật về Sở hữu trí tuệ:</p>
+        <ol>
+            <li><strong>Quản lý thiết bị tập trung (MDM):</strong>
+                <ul>
+                    <li><strong>100% thiết bị</strong> máy tính đề bàn/xách tay của Công ty cấp phát cho CBNV phải được cài đặt phần mềm quản lý đầu cuối tập trung của BP IT trước khi bàn giao.</li>
+                    <li>Nghiêm cấm CBNV tự ý gỡ bỏ, vô hiệu hóa phần mềm quản lý do IT cài đặt.</li>
+                </ul>
+            </li>
+            <li><strong>Quyền quản trị máy tính (Admin Rights):</strong>
+                <ul>
+                    <li>Theo cấu hình tiêu chuẩn, CBNV sẽ sử dụng máy tính dưới quyền người dùng tiêu chuẩn (Standard User).</li>
+                    <li>CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi thông báo đến BP IT. Trường hợp công việc đặc thù bắt buộc cần quyền Local Admin (ví dụ: một số vị trí kỹ thuật), BP IT sẽ cấp quyền tạm thời/có giới hạn sau khi có phê duyệt của Trưởng bộ phận.</li>
+                </ul>
+            </li>
+            <li><strong>Không tự ý cài đặt phần mềm trên máy tính được giao:</strong>
+                <ul>
+                    <li>BP IT lập danh sách Phần mềm phục vụ công việc tại Công ty.</li>
+                    <li>Người sử dụng có thể tự cài đặt các phần mềm có trong danh sách trên (không khuyến khích). Nếu cần sử dụng thêm các phần mềm khác không có trong danh sách cần có sự phê duyệt từ Trưởng đơn vị.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 10. Chính sách sử dụng thiết bị cá nhân (BYOD)</h3>
+        <p>Đối với các trường hợp được sự đồng ý của Ban Điều Hành cho phép sử dụng thiết bị cá nhân (Laptop, iPad, Điện thoại thông minh) để xử lý công việc và truy cập dữ liệu nội bộ:</p>
+        <ol>
+            <li><strong>Điều kiện kết nối an toàn:</strong>
+                <ul>
+                    <li>Thiết bị cá nhân phải được đăng ký thông tin với BP IT trước khi truy cập dữ liệu nội bộ.</li>
+                    <li>Thiết bị phải đáp ứng tiêu chuẩn bảo mật - do BP IT kiểm tra, đánh giá định kỳ.</li>
+                </ul>
+            </li>
+            <li><strong>Kiểm soát dữ liệu trên thiết bị cá nhân:</strong>
+                <ul>
+                    <li>Dữ liệu Công ty lưu trữ trên thiết bị cá nhân là tài sản của Công ty.</li>
+                    <li>Khi nhân sự nghỉ việc hoặc thiết bị cá nhân bị mất, BP IT có quyền yêu cầu/thực hiện xóa từ xa/vô hiệu hóa <strong>riêng biệt phần dữ liệu của Công ty</strong> trên thiết bị đó.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 11. Thanh lý và Đền bù thiệt hại tài sản</h3>
+        <ol>
+            <li><strong>Thanh lý thiết bị:</strong>
+                <ul>
+                    <li>Thiết bị được xem xét thanh lý khi: Hết tuổi thọ hao mòn và tình trạng hoạt động thiếu ổn định, hư hỏng mà chi phí sửa chữa vượt quá 50% giá trị, hoặc công nghệ đã lỗi thời không thể nâng cấp.</li>
+                    <li><strong>Quan trọng:</strong> Trước khi thanh lý hoặc tiêu hủy, BP IT bắt buộc phải thực hiện quy trình hủy dữ liệu triệt để trên bộ nhớ để tránh rò rỉ thông tin Công ty.</li>
+                </ul>
+            </li>
+            <li><strong>Đền bù thiệt hại:</strong>
+                <ul>
+                    <li>Trường hợp thiết bị mất mát, hư hỏng do lỗi chủ quan của người sử dụng (rơi vỡ, đổ nước, mất cắp do thiếu cẩn trọng, để người ngoài sử dụng...), CBNV phải chịu trách nhiệm đền bù.</li>
+                    <li>Mức đền bù căn cứ vào giá trị còn lại của thiết bị tại thời điểm hư hại/mất mát và mức độ lỗi, do BP IT đánh giá kỹ thuật và Phòng Tài chính Kế toán quyết định mức phạt/khấu trừ.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 12. Trách nhiệm và Quyền hạn của Bộ phận IT</h3>
+        <p>Để tối ưu hóa quy trình vận hành và xử lý nhanh các sự cố nhỏ, BP IT có các quyền hạn và trách nhiệm sau:</p>
+        <ol>
+            <li><strong>Quyền hạn về chi phí vận hành nhỏ lẻ:</strong>
+                <ul>
+                    <li>BP IT được quyền chủ động quyết định và thực hiện các khoản chi phí sửa chữa, mua sắm linh kiện thay thế nhỏ lẻ (chuột, bàn phím phổ thông, đổ mực máy in, dây cáp mạng, đầu nối, keo tản nhiệt...) có giá trị <strong>dưới 200.000 VNĐ/vụ việc</strong>.</li>
+                    <li>Các chi phí này sẽ được tổng hợp và làm thủ tục hoàn ứng/thanh toán theo định kỳ tháng với Phòng Tài chính Kế toán (có đầy đủ hóa đơn/chứng từ theo quy định).</li>
+                </ul>
+            </li>
+            <li><strong>Lập kế hoạch chi tiêu:</strong>
+                <ul>
+                    <li>Hàng năm/quý, BP IT có trách nhiệm lập Dự toán ngân sách CNTT (IT Budget) bao gồm: Chi phí bản quyền phần mềm, chi phí bảo trì hệ thống, và kế hoạch mua sắm thiết bị dự phòng.</li>
+                </ul>
+            </li>
+            <li><strong>Chế độ báo cáo:</strong>
+                <ul>
+                    <li><strong>Báo cáo tháng:</strong> Tình hình vận hành hệ thống, danh mục các sự cố đã xử lý, tình trạng biến động tài sản (cấp phát/thu hồi).</li>
+                    <li><strong>Báo cáo đột xuất:</strong> Khi xảy ra các sự cố nghiêm trọng về an ninh mạng hoặc hư hỏng tài sản có giá trị lớn.</li>
+                </ul>
+            </li>
+            <li><strong>Quyền kiểm tra:</strong> BP IT có quyền kiểm tra định kỳ hoặc đột xuất tình trạng vật lý và việc tuân thủ cài đặt phần mềm trên tất cả thiết bị thuộc sở hữu của Công ty.</li>
+        </ol>
+
+        <!-- PHẦN III -->
+        <h2 class="part-title">PHẦN III: BẢO MẬT THÔNG TIN & DỮ LIỆU</h2>
+
+        <h3 class="article-title">Điều 13. Lưu trữ dữ liệu tập trung trên Máy chủ</h3>
+        <p>Nhằm đảm bảo an toàn, tính sẵn sàng và khả năng sao lưu dữ liệu, Công ty quy định việc lưu trữ dữ liệu tập trung như sau:</p>
+        <ol>
+            <li><strong>Môi trường làm việc chung chung:</strong> Toàn bộ dữ liệu của Công ty được lưu trữ trên hệ thống máy chủ của Công ty (bao gồm hệ thống máy chủ vật lý, máy chủ ảo, cloud, dịch vụ thuê ngoài). Mỗi nhân sự có 1 tài khoản kết nối và làm việc trên dữ liệu của Công ty. Toàn bộ dữ liệu, tài liệu phát sinh trong quá trình làm việc của Cán bộ nhân viên (CBNV) được xác định là tài sản của Công ty và bắt buộc phải được lưu trữ trên hệ thống máy chủ này.</li>
+            <li><strong>Trách nhiệm Trưởng đơn vị:</strong> Mỗi phòng ban/đơn vị được cấp phát một khu vực/thư mục lưu trữ riêng biệt trên máy chủ. Trưởng đơn vị có trách nhiệm trực tiếp tổ chức và sắp xếp cấu trúc dữ liệu bên trong khu vực mình quản lý và phối hợp với bộ phận IT để thiết lập chi tiết quyền hạn với của từng nhân viên.</li>
+            <li><strong>Trách nhiệm của Nhân viên:</strong> Nhân viên có trách nhiệm sắp xếp và lưu trữ các tệp tin công việc trực tiếp vào các thư mục tương ứng được phân công - thường là ổ đĩa mạng W: do BP IT cài đặt. Nghiêm cấm việc chỉ lưu trữ dữ liệu quan trọng duy nhất tại các ổ đĩa cục bộ (C:, D:, Desktop) của máy tính.</li>
+            <li><strong>Quản lý rủi ro và Sao lưu:</strong> Dữ liệu nội bộ được BP IT sao lưu định kỳ. BP IT không chịu trách nhiệm đối với việc mất mát dữ liệu nếu CBNV lưu trữ sai quy định trên máy cá nhân.</li>
+            <li><strong>Truy cập dữ liệu từ ngoài Công ty:</strong> Việc truy cập dữ liệu nội bộ từ bên ngoài Công ty (CBNV làm việc từ xa, sử dụng thiết bị cá nhân, hoặc Đối tác/Khách hàng) phải tuân thủ quy trình sau:
+                <ul>
+                    <li>Cá nhân có nhu cầu (hoặc cán bộ phụ trách Đối tác/Khách hàng) lập yêu cầu kèm theo lý do và thời hạn sử dụng.</li>
+                    <li>Yêu cầu phải được Trưởng đơn vị quản lý trực tiếp xem xét và phê duyệt. Lưu ý: Đối với trường hợp người yêu cầu chia sẻ các vùng dữ liệu đang thuộc thẩm quyền quản lý của chính mình, bắt buộc phải có sự phê duyệt từ cấp quản lý cao hơn (Ban Điều Hành hoặc Cấp quản lý trực tiếp phía trên).</li>
+                    <li>BP IT tiếp nhận yêu cầu hợp lệ để tiến hành cấp phát quyền. BP IT có trách nhiệm chủ động thu hồi quyền truy cập ngay khi kết thúc công việc (khi có thông báo từ cán bộ phụ trách) hoặc hết thời hạn đăng ký.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3 class="article-title">Điều 14. Quản lý Tài khoản và Định danh</h3>
+        <ol>
+            <li><strong>Nguyên tắc trách nhiệm tài khoản:</strong> Toàn bộ tài khoản hệ thống do BP IT cấp phát đích danh cho người sử dụng. Người sử dụng phải chịu hoàn toàn trách nhiệm đối với mọi thao tác, hoạt động và dữ liệu phát sinh dưới tài khoản được cấp của mình.</li>
+            <li><strong>Thiết lập mật khẩu:</strong> Người sử dụng phải tự đặt mật khẩu trên thiết bị được Công ty cấp và khóa lại khi không sử dụng. Có thể chia sẻ mật khẩu này cho Quản lý trực tiếp hoặc đồng nghiệp thường xuyên cần sử dụng chung thiết bị (được Trưởng đơn vị phê duyệt). Tất cả các trường hợp chia sẻ mật khẩu phải thông báo cho BP IT. <strong>Khuyến cáo đặt mật khẩu</strong>:
+                <ul>
+                    <li>Độ dài tối thiểu <strong>08 ký tự</strong>, bao gồm 4 loại ký tự: Chữ hoa, chữ thường, chữ số và ký tự đặc biệt.</li>
+                    <li>Không sử dụng thông tin dễ đoán (tên Công ty/Họ và Tên, ngày tháng năm kỷ niệm/sinh nhật, chuỗi số dễ đoán 1234/6688...).</li>
+                    <li>Sử dụng xác thực đa nhân tố (MFA/2FA).</li>
+                </ul>
+            </li>
+            <li><strong>Bảo vệ mật khẩu:</strong> Không chia sẻ mật khẩu cho người không có thẩm quyền, không ghi chép mật khẩu tại nơi dễ tìm, dễ thấy hoặc lưu tự động trên thiết bị sử dụng chung.</li>
+            <li><strong>Quy trình cung cấp mật khẩu tạm thời (Ngoại lệ):</strong> Chỉ áp dụng khi CBNV vắng mặt có sự cố khẩn cấp hoặc phục vụ kiểm tra. Quy trình gồm: Đổi mật khẩu tạm -&gt; Cung cấp và lưu vết - thông báo cho quản lý trực tiếp nhưng không cần chờ đợi phê duyệt -&gt; BP IT xử lý -&gt; CBNV đổi lại mật khẩu chính ngay sau khi bàn giao. <strong>BP IT có thể thực hiện việc kiểm tra tài khoản, phá giải mật khẩu cá nhân nhưng bắt buộc phải thông báo cho Quản lý trực tiếp của nhân sự đó trước khi thực hiện</strong>.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 15. Phân quyền truy cập dữ liệu</h3>
+        <ol>
+            <li><strong>Nguyên tắc Đặc quyền tối thiểu (Least Privilege):</strong> Nhân sự chỉ được cấp quyền truy cập vừa đủ để phục vụ vai trò công việc hiện tại.</li>
+            <li><strong>Phê duyệt quyền đặc biệt:</strong> Mọi yêu cầu vượt chuẩn phải được sự phê duyệt từ Trưởng bộ phận quản lý nguồn dữ liệu đó.</li>
+            <li><strong>Rà soát định kỳ:</strong> BP IT phối hợp với các Trưởng bộ phận rà soát quyền truy cập 1 tháng/lần để cấp phát, điều chỉnh, thu hồi quyền sử dụng dữ liệu của nhân sự cho đúng với chức năng, nhiệm vụ được Công ty giao.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 16. Bảo vệ Dữ liệu và Tuân thủ Pháp lý</h3>
+        <ol>
+            <li><strong>Phân loại Dữ liệu "Lưu hành nội bộ":</strong> Bao gồm dữ liệu kinh doanh (báo cáo, khách hàng), nhân sự (lương, hồ sơ), vận hành (quy trình, chính sách) và kỹ thuật (mã nguồn, thiết kế, tài liệu công nghệ).</li>
+            <li><strong>Xử lý Dữ liệu cá nhân:</strong> Tuyệt đối không bán, chia sẻ hoặc để lộ thông tin cá nhân của khách hàng, đối tác và đồng nghiệp ra bên ngoài.</li>
+            <li><strong>Chống rò rỉ dữ liệu (DLP):</strong> Nghiêm cấm tự ý sao chép dữ liệu nội bộ ra thiết bị cá nhân. Khi gửi dữ liệu ra ngoài cho đối tác phải được có sự phê duyệt theo đúng NQLĐ và cam kết bảo mật.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 17. Kiểm soát Thiết bị lưu trữ ngoại vi và Mã hóa</h3>
+        <ol>
+            <li><strong>Khóa cổng USB:</strong> Mặc định BP IT khóa chức năng sao chép dữ liệu qua cổng USB (chỉ cho phép thiết bị ngoại vi như màn hình, chuột, bàn phím). Việc mở khóa phải được Trưởng bộ phận phê duyệt.</li>
+            <li><strong>Sửa chữa thiết bị:</strong> CBNV không được tự ý mang thiết bị Công ty ra cửa hàng bên ngoài sửa chữa. Mọi lỗi phần cứng/phần mềm phải thông qua BP IT.</li>
+            <li><strong>Bàn giao thiết bị:</strong> Nghiêm cấm tự ý cho mượn hoặc chuyển nhượng thiết bị làm việc chứa dữ liệu Công ty cho người không có thẩm quyền.</li>
+        </ol>
+
+        <!-- PHẦN IV -->
+        <h2 class="part-title">PHẦN IV: SỬ DỤNG MẠNG & LƯU TRỮ ĐÁM MÂY (Cloud)</h2>
+
+        <h3 class="article-title">Điều 18. Kết nối Mạng nội bộ (LAN/Wi-Fi)</h3>
+        <ol>
+            <li><strong>Hạn chế thiết bị cá nhân:</strong>CBNV không tự ý cắm các thiết bị mạng (Router, Switch, Bộ phát Wi-Fi cá nhân) vào hệ thống mạng LAN của Công ty để tránh xung đột IP và tạo ra lỗ hổng bảo mật.</li>
+            <li><strong>Kiểm duyệt thiết bị chuyên dụng:</strong> Các Đơn vị/Phòng ban có nhu cầu bổ sung, kết nối các thiết bị chuyên dụng vào hệ thống mạng LAN của Công ty bắt buộc phải thông báo để BP IT kiểm tra, đánh giá tính an toàn và tiêu chuẩn kỹ thuật trước khi lắp đặt.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 19. Làm việc từ xa và Mạng riêng ảo (VPN)</h3>
+        <ol>
+            <li><strong>Sử dụng VPN:</strong> Khi làm việc ngoài văn phòng (đi công tác, làm việc từ xa), CBNV <strong>bắt buộc phải sử dụng VPN</strong> do Công ty cung cấp khi muốn truy cập vào các hệ thống nội bộ, máy chủ hoặc phần mềm nghiệp vụ.</li>
+            <li><strong>An toàn kết nối công cộng:</strong> Nghiêm cấm sử dụng các mạng Wi-Fi công cộng không có mật khẩu hoặc mật khẩu công khai (tại quán cafe, sân bay, nhà ga...) để gửi/nhận Dữ liệu lưu hành nội bộ nếu chưa bật VPN, nhằm phòng tránh việc bị tin tặc đánh chặn phiên làm việc (Man-in-the-middle attack).</li>
+        </ol>
+
+        <h3 class="article-title">Điều 20. Lưu trữ và Chia sẻ trên đám mây (Cloud Storage)</h3>
+        <ol>
+            <li><strong>Chỉ sử dụng Cloud được cấp phép:</strong> CBNV chỉ được phép lưu trữ, xử lý và chia sẻ dữ liệu công việc trên nền tảng Cloud do Công ty quy định.</li>
+            <li><strong>Nghiêm cấm Cloud cá nhân:</strong> Tuyệt đối không đẩy/lưu trữ Dữ liệu lưu hành nội bộ lên các tài khoản Cloud cá nhân (như Google Drive cá nhân, Dropbox, iCloud cá nhân) hoặc các công cụ chat không chính thức. Hành vi này được xem là lãng phí tài nguyên, gây thất thoát dữ liệu và vi phạm nghiêm trọng chính sách bảo mật.</li>
+        </ol>
+
+        <!-- PHẦN V -->
+        <h2 class="part-title">PHẦN V: QUY TRÌNH ỨNG PHÓ SỰ CỐ</h2>
+
+        <h3 class="article-title">Điều 21. Báo cáo sự cố an toàn thông tin</h3>
+        <p>Khi phát hiện hoặc nghi ngờ có sự cố an toàn thông tin, CBNV phải ngay lập tức thông báo cho BP IT và xác nhận lại BP IT đã nhận được thông tin. Các sự cố bao gồm:</p>
+        <ol>
+            <li>Mất mát hoặc thất lạc thiết bị công nghệ (Laptop, điện thoại có chứa dữ liệu công ty).</li>
+            <li>Nhận được email lừa đảo (Phishing), email yêu cầu chuyển tiền từ nguồn đáng ngờ.</li>
+            <li>Nhấp nhầm vào đường link lạ, hoặc phát hiện máy tính có dấu hiệu bị nhiễm virus, Ransomware (các file dữ liệu đột nhiên bị đổi đuôi, không thể mở được, máy tính bị khóa đòi tiền chuộc).</li>
+            <li>Phát hiện người không có thẩm quyền truy cập trái phép vào hệ thống, hoặc nghi ngờ mật khẩu của mình đã bị lộ.</li>
+        </ol>
+
+        <h3 class="article-title">Điều 22. Kế hoạch duy trì hoạt động kinh doanh (BCP)</h3>
+        <ol>
+            <li><strong>Sao lưu (Backup) tập trung:</strong> BP IT có trách nhiệm thiết lập lịch sao lưu tự động và định kỳ cho các máy chủ và dữ liệu dùng chung của Công ty.</li>
+            <li><strong>Trách nhiệm lưu trữ của người dùng:</strong> CBNV có trách nhiệm lưu trữ các file làm việc quan trọng vào đúng ổ đĩa/thư mục dùng chung (Shared Drive/File Server) hoặc Cloud Công ty đã được quy định, không lưu trữ dữ liệu quan trọng ở màn hình Desktop hay ổ đĩa cục bộ của máy tính cá nhân để đảm bảo hệ thống tự động của BP IT có thể sao lưu dữ liệu.</li>
+        </ol>
+
+        <!-- PHẦN VI -->
+        <h2 class="part-title">PHẦN VI: TRÁCH NHIỆM THI HÀNH</h2>
+
+        <h3 class="article-title">Điều 23. Phân công trách nhiệm</h3>
+        <ol>
+            <li><strong>Trách nhiệm của Người lao động (CBNV):</strong>
+                <ul>
+                    <li>Đọc, hiểu và ký <strong>Cam kết tuân thủ Chính sách CNTT & Bảo mật thông tin</strong> khi bắt đầu làm việc.</li>
+                    <li>Tuân thủ nghiêm ngặt mọi điều khoản trong chính sách này. Mọi thắc mắc cần liên hệ BP IT để được hướng dẫn.</li>
+                </ul>
+            </li>
+            <li><strong>Trách nhiệm của Bộ phận IT:</strong>
+                <ul>
+                    <li>Triển khai cấu hình kỹ thuật, giám sát hệ thống để đảm bảo 100% thiết bị tuân thủ chính sách (MDM, DLP, VPN...).</li>
+                    <li>Tổ chức đào tạo, truyền thông nâng cao nhận thức an toàn thông tin cho CBNV định kỳ hoặc khi có nhân sự mới.</li>
+                    <li>Báo cáo định kỳ tình hình an ninh mạng và các vi phạm (nếu có) lên Ban Điều Hành.</li>
+                </ul>
+            </li>
+            <li><strong>Trách nhiệm của Bộ phận Nhân sự (HR):</strong>
+                <ul>
+                    <li>Phối hợp chặt chẽ cùng BP IT trong quy trình Onboarding (tiếp nhận) và Offboarding (nghỉ việc) đúng SLAs quy định để kiểm soát tài sản và tài khoản.</li>
+                    <li>Lưu trữ bản cam kết tuân thủ của CBNV vào hồ sơ nhân sự.</li>
+                </ul>
+            </li>
+            <li><strong>Trách nhiệm của Quản lý các phòng ban:</strong>
+                <ul>
+                    <li>Đôn đốc, giám sát nhân viên trong bộ phận mình thực hiện nghiêm chỉnh chính sách.</li>
+                    <li>Phối hợp định kỳ với BP IT rà soát quyền sử dụng dữ liệu của CBNV trong phòng ban/bộ phận mình quản lý.</li>
+                    <li>Xem xét, phê duyệt các yêu cầu (cấp quyền hệ thống, mở cổng USB...) dựa trên nhu cầu công việc thực tế của nhân viên.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- PHẦN VII -->
+        <h2 class="part-title">PHẦN VII: CHẾ TÀI XỬ LÝ VI PHẠM</h2>
+
+        <h3 class="article-title">Điều 24. Các mức độ xử lý vi phạm</h3>
+        <p>Quy trình và thẩm quyền xử lý kỷ luật được thực hiện <strong>tuân thủ theo Nội quy lao động hiện hành của Công ty</strong>. Dưới đây là các mức độ vi phạm an toàn thông tin và hình thức kỷ luật đề xuất tương ứng:</p>
+        <ol>
+            <li><strong>Vi phạm nhẹ (Vô ý, chưa gây hậu quả):</strong>
+                <ul>
+                    <li>Ví dụ: Đặt mật khẩu yếu, lưu trữ sai quy định, để người lạ mượn máy tính tạm thời.</li>
+                    <li>Hình thức xử lý đề xuất: <strong>Khiển trách</strong>, tùy mức độ có thể yêu cầu đào tạo lại về an toàn thông tin.</li>
+                </ul>
+            </li>
+            <li><strong>Vi phạm trung bình (Tái phạm nhiều lần hoặc gây gián đoạn công việc nhỏ):</strong>
+                <ul>
+                    <li>Ví dụ: Chia sẻ tải khoản, mật khẩu cho nhân sự khác không đúng thẩm quyền. Lắp đặt thiết bị mạng cá nhân vào hệ thống Công ty khi chưa được thông qua.</li>
+                    <li>Hình thức xử lý đề xuất: <strong>Kéo dài thời hạn nâng lương</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>Vi phạm nghiêm trọng (Cố ý, gây thất thoát tài sản, lộ Dữ liệu mật, vi phạm pháp luật) - Sa thải:</strong>
+                <ul>
+                    <li>Ví dụ: Cố tình sao chép, đánh cắp danh sách khách hàng, dữ liệu tài chính gửi ra ngoài; tự ý mang thiết bị hỏng ra ngoài để thực hiện sao chếp cơ sở dữ liệu nội bộ; hành vi phá hoại hệ thống khi chuẩn bị nghỉ việc.</li>
+                    <li>Hình thức xử lý đề xuất: <strong>Cách chức</strong>. Đình chỉ công việc, xem xét <strong>sa thải</strong> ngay lập tức.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <!-- TRANG CAM KẾT (Page Break) -->
+        <div class="page-break">
+            <!-- QUỐC HIỆU TiÊU NGỮ -->
+            <div class="text-center mb-8">
+                <h2 class="font-bold uppercase text-lg mb-1">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h2>
+                <h3 class="font-bold text-base"><span class="border-b-[1.5px] border-black pb-1">Độc lập - Tự do - Hạnh phúc</span></h3>
+            </div>
+
+            <!-- TÊN BẢN CAM KẾT -->
+            <div class="text-center mb-8 mt-12">
+                <h1 class="text-2xl font-bold uppercase mb-2">BẢN CAM KẾT</h1>
+                <h2 class="text-lg font-bold uppercase mb-1">TUÂN THỦ CHÍNH SÁCH CNTT & BẢO MẬT THÔNG TIN</h2>
+                <p class="italic text-base">*(Kèm theo Chính sách Quản trị CNTT số: IT-POL-001)*</p>
+            </div>
+
+            <!-- THÔNG TIN NGƯỜI CAM KẾT -->
+            <div class="mb-6">
+                <p class="mb-2"><strong>Kính gửi:</strong> Ban Điều Hành và Bộ phận Công nghệ Thông tin (BP IT).</p>
+                <div class="grid grid-cols-2 gap-4 mt-4 mb-4">
+                    <p><strong>Tôi tên là:</strong> ................................................................</p>
+                    <p><strong>Mã nhân viên:</strong> .......................................</p>
+                    <p><strong>Bộ phận:</strong> .................................................................</p>
+                    <p><strong>Chức vụ:</strong> ................................................</p>
+                </div>
+                <p><strong>Ngày bắt đầu làm việc:</strong> .......................................................................................................................................................</p>
+            </div>
+
+            <p class="mb-4">Sau khi đã được phổ biến, đọc và hiểu rõ nội dung của <strong>Chính sách Quản trị Công nghệ Thông tin (IT-POL-001)</strong>, tôi tự nguyện ký bản cam kết này với các điều khoản cụ thể như sau:</p>
+
+            <h3 class="article-title">1. Quản lý và Sử dụng Tài sản CNTT</h3>
+            <ul>
+                <li>Tôi cam kết bảo quản an toàn các thiết bị được cấp phát (Laptop, Desktop, màn hình, phụ kiện...). Trường hợp xảy ra hư hỏng, mất mát do lỗi chủ quan hoặc thiếu cẩn trọng, tôi đồng ý bồi thường thiệt hại theo đánh giá kỹ thuật và quy định tài chính của Công ty.</li>
+                <li>Tôi cam kết không tự ý mang thiết bị đi sửa chữa bên ngoài, không cho người khác (bao gồm cả người thân) mượn hoặc sử dụng thiết bị của Công ty.</li>
+                <li>Tôi cam kết bàn giao đầy đủ thiết bị và dữ liệu trong vòng 04 giờ làm việc kể từ khi chấm dứt hợp đồng lao động hoặc có quyết định nghỉ việc.</li>
+            </ul>
+
+            <h3 class="article-title">2. Bảo mật Tài khoản và Mật khẩu</h3>
+            <ul>
+                <li>Tôi chịu trách nhiệm duy nhất đối với mọi hoạt động được thực hiện dưới tài khoản (Email, Phần mềm, Máy tính) được cấp.</li>
+                <li>Tôi cam kết đặt mật khẩu có độ phức tạp cao, không chia sẻ mật khẩu cho người không có thẩm quyền và thực hiện khóa máy tính (Lock screen) mỗi khi rời khỏi vị trí làm việc.</li>
+            </ul>
+
+            <h3 class="article-title">3. Quản lý Dữ liệu và Lưu trữ</h3>
+            <ul>
+                <li>Tôi hiểu và thừa nhận rằng mọi dữ liệu phát sinh trong quá trình làm việc là tài sản của Công ty. Tôi cam kết lưu trữ dữ liệu tập trung trên Máy chủ/Cloud theo hướng dẫn (ổ đĩa W: hoặc hệ thống dùng chung).</li>
+                <li>Tôi chấp nhận việc xóa dữ liệu của Công ty trên thiết bị cá nhân khi cần thiết.</li>
+                <li>Tôi cam kết không sao chép, phát tán Dữ liệu nhạy cảm/Dữ liệu mật (thông tin khách hàng, bí mật kinh doanh, báo cáo tài chính...) sang thiết bị cá nhân hoặc các nền tảng lưu trữ đám mây cá nhân khi chưa được phê duyệt.</li>
+                <li>Tôi cam kết tuân thủ nghiêm ngặt các quy định về Bảo vệ dữ liệu cá nhân theo quy định pháp luật hiện hành.</li>
+            </ul>
+
+            <h3 class="article-title">4. Cài đặt Phần mềm và An ninh mạng</h3>
+            <ul>
+                <li>Tôi cam kết chỉ cài đặt, sử dụng các phần mềm đã được phê duyệt bởi BP IT trên thiết bị của Công ty.</li>
+                <li>Tôi đồng ý để BP IT cài đặt các phần mềm quản lý tập trung (MDM/UEM) và giám sát an ninh trên thiết bị nhằm bảo vệ tài nguyên hệ thống.</li>
+                <li>Tôi cam kết sử dụng kết nối VPN khi làm việc từ xa và không tự ý lắp đặt các thiết bị mạng lạ vào hệ thống nội bộ của Công ty.</li>
+            </ul>
+
+            <h3 class="article-title">5. Ứng phó Sự cố</h3>
+            <ul>
+                <li>Tôi cam kết báo cáo ngay lập tức (trong vòng tối đa 12 giờ) cho BP IT khi phát hiện sự cố an ninh mạng, nghi ngờ bị nhiễm mã độc (Ransomware) hoặc khi bị mất/thất lạc thiết bị làm việc.</li>
+            </ul>
+
+            <h3 class="article-title">6. Điều khoản thi hành</h3>
+            <p class="mb-4">Tôi hiểu rằng việc vi phạm bất kỳ điều khoản nào trong Bản cam kết này và Chính sách IT-POL-001 sẽ được coi là vi phạm kỷ luật lao động. Tùy theo mức độ nghiêm trọng và hậu quả gây ra, tôi sẽ chịu các hình thức xử lý theo Nội quy lao động của Công ty (bao gồm cả hình thức <strong>Sa thải</strong>) và phải bồi thường thiệt hại vật chất (nếu có) theo quy định của pháp luật hiện hành.</p>
+            
+            <p>Bản cam kết này có hiệu lực kể từ ngày ký.</p>
+
+            <!-- PHẦN KÝ TÊN -->
+            <div class="flex justify-end mt-8">
+                <div class="text-center mr-8">
+                    <p class="italic text-[15px]">......, ngày ...... tháng ...... năm ......</p>
+                    <p class="font-bold mt-2">NGƯỜI CAM KẾT</p>
+                    <p class="italic text-[14px]">(Ký và ghi rõ họ tên)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
