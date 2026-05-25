@@ -19,6 +19,7 @@ Nhằm đảm bảo an toàn, tính sẵn sàng và khả năng sao lưu dữ li
 2. **Thiết lập mật khẩu:** Người sử dụng phải tự đặt mật khẩu trên thiết bị được Công ty cấp và khóa lại khi không sử dụng. Có thể chia sẻ mật khẩu này cho Quản lý trực tiếp hoặc đồng nghiệp thường xuyên cần sử dụng chung thiết bị (được Trưởng đơn vị phê duyệt). Tất cả các trường hợp chia sẻ mật khẩu phải thông báo cho BP IT. **Khuyến cáo đặt mật khẩu**:
    * Độ dài tối thiểu **08 ký tự**, bao gồm 4 loại ký tự: Chữ hoa, chữ thường, chữ số và ký tự đặc biệt.
    * Không sử dụng thông tin dễ đoán (tên Công ty/Họ và Tên, ngày tháng năm kỷ niệm/sinh nhật, chuỗi số dễ đoán 1234/6688...).
+   * Sử dụng xác thực đa nhân tố (MFA/2FA).
 3. **Bảo vệ mật khẩu:** Không chia sẻ mật khẩu cho người không có thẩm quyền, không ghi chép mật khẩu tại nơi dễ tìm, dễ thấy hoặc lưu tự động trên thiết bị sử dụng chung.
 4. **Quy trình cung cấp mật khẩu tạm thời (Ngoại lệ):** Chỉ áp dụng khi CBNV vắng mặt có sự cố khẩn cấp hoặc phục vụ kiểm tra. Quy trình gồm: Đổi mật khẩu tạm -> Cung cấp và lưu vết - thông báo cho quản lý trực tiếp nhưng không cần chờ đợi phê duyệt -> BP IT xử lý -> CBNV đổi lại mật khẩu chính ngay sau khi bàn giao. **BP IT có thể thực hiện việc kiểm tra tài khoản, phá giải mật khẩu cá nhân nhưng bắt buộc phải thông báo cho Quản lý trực tiếp của nhân sự đó trước khi thực hiện**.
 

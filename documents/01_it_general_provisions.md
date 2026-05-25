@@ -13,7 +13,7 @@
 Chính sách Quản trị Công nghệ Thông tin (CNTT) này được ban hành nhằm:
 1. **Thiết lập khung chuẩn mực:** Xây dựng các nguyên tắc, tiêu chuẩn trong việc quản lý, cấp phát và sử dụng tài nguyên CNTT của Công ty.
 2. **Bảo vệ tài sản và dữ liệu:** Ngăn chặn các rủi ro về rò rỉ dữ liệu, tấn công mạng, mất mát thông tin kinh doanh cốt lõi và tài sản vật lý của Công ty.
-3. **Đảm bảo tính tuân thủ:** Hướng dẫn toàn thể nhân sự cách thức làm việc trên môi trường số một cách an toàn, đúng quy định pháp luật (đặc biệt là pháp luật về bảo vệ dữ liệu cá nhân) và văn hóa doanh nghiệp.
+3. **Đảm bảo tính tuân thủ:** Hướng dẫn toàn thể nhân sự cách thức làm việc trên môi trường số một cách an toàn, đúng quy định pháp luật và văn hóa doanh nghiệp.
 4. **Tối ưu hóa hiệu suất:** Đảm bảo hệ thống vận hành xuyên suốt, ổn định, tránh lãng phí tài nguyên mạng, lưu trữ và thiết bị.
 
 ### Điều 2. Đối tượng và Phạm vi áp dụng
@@ -27,11 +27,10 @@ Chính sách Quản trị Công nghệ Thông tin (CNTT) này được ban hành
 ### Điều 3. Căn cứ ban hành
 Chính sách này được xây dựng dựa trên sự tuân thủ các văn bản pháp luật hiện hành và quy định nội bộ, bao gồm:
 * Bộ luật Lao động của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam.
-* Luật An toàn thông tin mạng và Luật An ninh mạng hiện hành.
-* **Nghị định 13/2023/NĐ-CP** ngày 17/04/2023 của Chính phủ về Bảo vệ Dữ liệu cá nhân.
+* Các quy định về an toàn thông tin và an ninh mạng của pháp luật hiện hành.
 * Nội quy lao động và Thỏa ước lao động tập thể của Công ty.
 * Quy định về bảo mật thông tin đã ban hành tại Công ty.
-* **Cam kết bảo mật thông tin** giữa Công ty và Người lao động.
+* Cam kết bảo mật thông tin Công ty của Người lao động.
 
 ### Điều 4. Giải thích từ ngữ
 Trong tài liệu này, các từ ngữ và từ viết tắt dưới đây được hiểu như sau:

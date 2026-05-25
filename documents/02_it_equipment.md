@@ -38,8 +38,7 @@ Nhằm đảm bảo an toàn dữ liệu và tối ưu hóa tài nguyên, việc
 
 2. **Quy trình Thu hồi:**
    * Khi có thông tin nhân sự chuẩn bị nghỉ việc, Bộ phận Nhân sự phải lưu ý BP IT theo dõi, thực hiện các biện pháp sao lưu, tránh mất mát dữ liệu.
-   * Ngay khi có quyết định nghỉ việc hoặc chấm dứt hợp đồng, Bộ phận Nhân sự phải lập tức thông báo và xác nhận phản hồi từ BP IT.
-   * Trong vòng **04 giờ làm việc** kể từ thời điểm nhân sự chính thức nghỉ, BP IT thực hiện: 
+   * Ngay khi có quyết định nghỉ việc hoặc chấm dứt hợp đồng, Bộ phận Nhân sự phải lập tức thông báo và xác nhận phản hồi từ BP IT. Bộ phận IT thực hiện:
      * Khóa/vô hiệu hóa toàn bộ tài khoản Email, phần mềm, hệ thống nội bộ của nhân sự đó.
      * Cắt quyền truy cập từ xa (VPN, Cloud Drive).
    * Nhân sự nghỉ việc có trách nhiệm bàn giao lại nguyên trạng thiết bị phần cứng cho BP IT. Các dữ liệu, tài khoản liên quan sẽ được BP IT bàn giao cho Quản lý trực tiếp và tiến hành xóa trắng thiết bị theo chuẩn an toàn để cấp phát cho người sử dụng tiếp theo.
@@ -49,7 +48,7 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
 
 1. **Trách nhiệm bảo quản vật lý:**
    * Không để thiết bị tại các khu vực thiếu an toàn (trong xe ô tô không người trông, nơi công cộng, nơi có nhiệt độ/độ ẩm khắc nghiệt).
-   * Trong trường hợp xảy ra rơi vỡ, hỏng hóc hoặc mất cắp, CBNV phải báo cáo ngay lập tức cho BP IT và Quản lý trực tiếp (chậm nhất trong vòng 12 giờ) để kịp thời khóa thiết bị từ xa, chặn rò rỉ dữ liệu.
+   * Trong trường hợp xảy ra rơi vỡ, hỏng hóc hoặc mất cắp, CBNV phải báo cáo ngay lập tức cho BP IT và Quản lý trực tiếp (chậm nhất trong vòng 02 giờ) để kịp thời khóa thiết bị từ xa, chặn rò rỉ dữ liệu.
 2. **Hành vi nghiêm cấm:**
    * Sử dụng thiết bị của Công ty để truy cập, lưu trữ, chỉnh sửa, phát tán các nội dung vi phạm pháp luật.
    * Sử dụng thiết bị của Công ty để để thực hiện các hoạt động nằm ngoài chức năng, nhiệm vụ được Công ty giao.
@@ -63,10 +62,10 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
    * Nghiêm cấm CBNV tự ý gỡ bỏ, vô hiệu hóa phần mềm quản lý do IT cài đặt.
 2. **Quyền quản trị máy tính (Admin Rights):**
    * Theo cấu hình tiêu chuẩn, CBNV sẽ sử dụng máy tính dưới quyền người dùng tiêu chuẩn (Standard User). 
-   * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi thông báo đến BP IT.
-3. **Tuyệt đối không sử dụng phần mềm vi phạm bản quyền:**
-   * Chỉ những phần mềm do BP IT phê duyệt và cung cấp bản quyền mới được phép hoạt động trên thiết bị công ty.
-   * Nghiêm cấm mọi hành vi tải, cài đặt, sử dụng các phần mềm bẻ khóa (Crack, Keygen, Patch, Pirated software). Nếu Công ty bị phạt từ các cơ quan thanh tra bản quyền do lỗi cố tình cài đặt của cá nhân, cá nhân đó phải hoàn toàn chịu trách nhiệm bồi thường thiệt hại.
+   * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi thông báo đến BP IT. Trường hợp công việc đặc thù bắt buộc cần quyền Local Admin (ví dụ: một số vị trí kỹ thuật), BP IT sẽ cấp quyền tạm thời/có giới hạn sau khi có phê duyệt của Trưởng bộ phận.
+3. **Không tự ý cài đặt phần mềm trên máy tính được giao:**
+   * BP IT lập danh sách Phần mềm phục vụ công việc tại Công ty.
+   * Người sử dụng có thể tự cài đặt các phần mềm có trong danh sách(không khuyến khích). Nếu cần sử dụng thêm các phần mềm khác không có trong danh sách
 
 ### Điều 10. Chính sách sử dụng thiết bị cá nhân (BYOD)
 Đối với các trường hợp được sự đồng ý của Ban Điều Hành cho phép sử dụng thiết bị cá nhân (Laptop, iPad, Điện thoại thông minh) để xử lý công việc và truy cập dữ liệu nội bộ:

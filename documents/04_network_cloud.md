@@ -9,7 +9,7 @@
 
 ### Điều 19. Làm việc từ xa và Mạng riêng ảo (VPN)
 1. **Sử dụng VPN:** Khi làm việc ngoài văn phòng (đi công tác, làm việc từ xa), CBNV **bắt buộc phải sử dụng VPN** do Công ty cung cấp khi muốn truy cập vào các hệ thống nội bộ, máy chủ hoặc phần mềm nghiệp vụ.
-2. **An toàn kết nối công cộng:** Nghiêm cấm sử dụng các mạng Wi-Fi công cộng không có mật khẩu (tại quán cafe, sân bay, nhà ga...) để gửi/nhận Dữ liệu lưu hành nội bộ nếu chưa bật VPN, nhằm phòng tránh việc bị tin tặc đánh chặn phiên làm việc (Man-in-the-middle attack).
+2. **An toàn kết nối công cộng:** Nghiêm cấm sử dụng các mạng Wi-Fi công cộng không có mật khẩu hoặc mật khẩu công khai (tại quán cafe, sân bay, nhà ga...) để gửi/nhận Dữ liệu lưu hành nội bộ nếu chưa bật VPN, nhằm phòng tránh việc bị tin tặc đánh chặn phiên làm việc (Man-in-the-middle attack).
 
 ### Điều 20. Lưu trữ và Chia sẻ trên đám mây (Cloud Storage)
 1. **Chỉ sử dụng Cloud được cấp phép:** CBNV chỉ được phép lưu trữ, xử lý và chia sẻ dữ liệu công việc trên nền tảng Cloud do Công ty quy định.
