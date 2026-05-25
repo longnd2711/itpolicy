@@ -65,7 +65,7 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
    * CBNV không được cung cấp mật khẩu Quản trị viên nội bộ (Local Admin) để tự cài đặt phần mềm nhằm giảm thiểu rủi ro bảo mật. Các yêu cầu cài đặt phần mềm mới phải được gửi thông báo đến BP IT. Trường hợp công việc đặc thù bắt buộc cần quyền Local Admin (ví dụ: một số vị trí kỹ thuật), BP IT sẽ cấp quyền tạm thời/có giới hạn sau khi có phê duyệt của Trưởng bộ phận.
 3. **Không tự ý cài đặt phần mềm trên máy tính được giao:**
    * BP IT lập danh sách Phần mềm phục vụ công việc tại Công ty.
-   * Người sử dụng có thể tự cài đặt các phần mềm có trong danh sách(không khuyến khích). Nếu cần sử dụng thêm các phần mềm khác không có trong danh sách
+   * Người sử dụng có thể tự cài đặt các phần mềm có trong danh sách trên (không khuyến khích). Nếu cần sử dụng thêm các phần mềm khác không có trong danh sách cần có sự phê duyệt từ Trưởng đơn vị.
 
 ### Điều 10. Chính sách sử dụng thiết bị cá nhân (BYOD)
 Đối với các trường hợp được sự đồng ý của Ban Điều Hành cho phép sử dụng thiết bị cá nhân (Laptop, iPad, Điện thoại thông minh) để xử lý công việc và truy cập dữ liệu nội bộ:
