@@ -51,15 +51,15 @@ Tài sản CNTT do Công ty cấp phát nhằm mục đích phục vụ công vi
    * Không để thiết bị tại các khu vực thiếu an toàn (trong xe ô tô không người trông, nơi công cộng, nơi có nhiệt độ/độ ẩm khắc nghiệt).
    * Trong trường hợp xảy ra rơi vỡ, hỏng hóc hoặc mất cắp, CBNV phải báo cáo ngay lập tức cho BP IT và Quản lý trực tiếp (chậm nhất trong vòng 12 giờ) để kịp thời khóa thiết bị từ xa, chặn rò rỉ dữ liệu.
 2. **Hành vi nghiêm cấm:**
-   * Sử dụng thiết bị của Công ty để truy cập, lưu trữ, phát tán các nội dung đồi trụy, phản động hoặc vi phạm pháp luật.
-   * Sử dụng thiết bị để tham gia cá cược, đánh bạc trực tuyến, hoặc đào tiền ảo (Crypto mining) gây quá tải và hư hại phần cứng.
+   * Sử dụng thiết bị của Công ty để truy cập, lưu trữ, chỉnh sửa, phát tán các nội dung vi phạm pháp luật.
+   * Sử dụng thiết bị của Công ty để để thực hiện các hoạt động nằm ngoài chức năng, nhiệm vụ được Công ty giao.
    * Cho mượn, cho thuê, cầm cố hoặc cho phép người ngoài (bao gồm cả thành viên gia đình) sử dụng máy tính của Công ty.
 
 ### Điều 9. Cài đặt và Quản lý Phần mềm
 Đây là nguyên tắc bắt buộc nhằm ngăn chặn rủi ro lây nhiễm Ransomware, mã độc và vi phạm pháp luật về Sở hữu trí tuệ:
 
 1. **Quản lý thiết bị tập trung (MDM):**
-   * **100% thiết bị** máy tính, laptop cấp phát cho CBNV phải được cài đặt phần mềm quản lý đầu cuối tập trung (MDM/UEM) của BP IT trước khi bàn giao.
+   * **100% thiết bị** máy tính đề bàn/xách tay của Công ty cấp phát cho CBNV phải được cài đặt phần mềm quản lý đầu cuối tập trung của BP IT trước khi bàn giao.
    * Nghiêm cấm CBNV tự ý gỡ bỏ, vô hiệu hóa phần mềm quản lý do IT cài đặt.
 2. **Quyền quản trị máy tính (Admin Rights):**
    * Theo cấu hình tiêu chuẩn, CBNV sẽ sử dụng máy tính dưới quyền người dùng tiêu chuẩn (Standard User). 
