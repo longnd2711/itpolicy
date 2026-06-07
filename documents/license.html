@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Nhu cầu Phần mềm Bản quyền | HEM EMM</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* slate-950 */
+            color: #f1f5f9; /* slate-100 */
+            margin: 0;
+            overflow: hidden; 
+        }
+        
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            padding: 5rem 0; 
+        }
+        
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            z-index: 10;
+        }
+
+        .slide-content {
+            margin: auto; 
+            animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(30px);
+            width: 100%;
+            padding: 0 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .slide-content { padding: 0 4rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .slide-content { padding: 0 6rem; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Decorative Grid Background */
+        .bg-grid {
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30 selection:text-blue-200">
+
+    <!-- Global Background Elements -->
+    <div class="fixed inset-0 z-0 bg-grid opacity-20 pointer-events-none"></div>
+    <div class="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-blue-900/20 blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-[-20%] right-[-10%] w-[40%] h-[40%] rounded-full bg-emerald-900/10 blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Global Header -->
+    <div class="fixed top-0 right-0 p-6 z-50 pointer-events-none flex items-center gap-3">
+        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+        <p class="text-xs font-bold text-slate-500 tracking-widest uppercase bg-slate-950/50 px-2 py-1 rounded backdrop-blur-sm">
+            <span class="var-company">HEM EMM</span> - <span class="var-dept-en">IT DEPARTMENT</span>
+        </p>
+    </div>
+
+    <!-- Global Footer -->
+    <div class="fixed bottom-0 left-0 p-6 z-50 pointer-events-none w-full flex justify-between items-center bg-gradient-to-t from-slate-950 to-transparent pt-10">
+        <p class="text-xs font-medium text-slate-500 bg-slate-950/50 px-2 py-1 rounded backdrop-blur-sm">Báo cáo: Nhu cầu Phần mềm Bản quyền</p>
+        <div class="flex items-center gap-4">
+            <div class="flex gap-1">
+                <div id="dot-container" class="flex gap-2 mr-4 pointer-events-auto"></div>
+            </div>
+            <p id="pageNumber" class="text-sm font-mono font-semibold text-blue-500/70 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20 backdrop-blur-sm">01 / 10</p>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <button onclick="prevSlide()" class="fixed left-6 top-1/2 -translate-y-1/2 p-4 text-slate-600 hover:text-blue-400 transition-all z-50 bg-slate-900/50 border border-slate-800 rounded-full hover:bg-slate-800 hover:scale-110 shadow-lg backdrop-blur-sm group hidden md:block">
+        <i class="fas fa-chevron-left text-xl group-hover:-translate-x-1 transition-transform"></i>
+    </button>
+    <button onclick="nextSlide()" class="fixed right-6 top-1/2 -translate-y-1/2 p-4 text-slate-600 hover:text-blue-400 transition-all z-50 bg-slate-900/50 border border-slate-800 rounded-full hover:bg-slate-800 hover:scale-110 shadow-lg backdrop-blur-sm group hidden md:block">
+        <i class="fas fa-chevron-right text-xl group-hover:translate-x-1 transition-transform"></i>
+    </button>
+
+    <!-- Slide Container -->
+    <div id="slides-container" class="relative w-full h-full z-10">
+
+        <!-- ================= SLIDE 1: BÌA ================= -->
+        <div class="slide active">
+            <div class="slide-content max-w-4xl mx-auto flex flex-col items-center text-center">
+                <div class="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-slate-800 border border-slate-700 shadow-2xl shadow-emerald-500/10 mb-8">
+                    <i class="fa-solid fa-copyright text-5xl text-emerald-400"></i>
+                </div>
+                <div class="inline-block px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm">
+                    Báo Cáo Đánh Giá Nội Bộ
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                    Nhu Cầu Sử Dụng <br> <span class="text-gradient">Phần Mềm Bản Quyền</span>
+                </h1>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-blue-500 to-emerald-400 mx-auto rounded-full mb-8"></div>
+                
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl max-w-2xl w-full mb-8 flex items-center justify-center gap-6 shadow-xl">
+                    <div class="text-emerald-400 text-4xl"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="text-left">
+                        <p class="text-slate-400 text-sm font-semibold uppercase tracking-wider mb-1">Mục tiêu cốt lõi</p>
+                        <p class="text-white font-medium text-lg">Trang bị <strong class="text-emerald-400 text-xl">100%</strong> phần mềm bản quyền & Tối ưu phương án đầu tư</p>
+                    </div>
+                </div>
+
+                <button onclick="nextSlide()" class="mt-4 group flex items-center gap-3 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+                    Xem chi tiết báo cáo
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 2: 6 NHÓM NHU CẦU ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-7xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-xl shrink-0">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">6 Nhóm Nhu Cầu Sử Dụng Chính</h2>
+                        <p class="text-slate-500 text-sm mt-1">Phân loại theo chức năng và phòng ban</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Nhu cầu 1 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-blue-500/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-blue-400 text-xl"><i class="fa-solid fa-server"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">2 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">1. Server Hệ thống</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Bao gồm File Server và ERP Server. Trái tim lưu trữ và vận hành.</p>
+                    </div>
+
+                    <!-- Nhu cầu 2 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-purple-500/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-purple-400 text-xl"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">21 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">2. Thiết kế Công nghệ</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Các máy tính Phòng Kỹ thuật (Chưa bao gồm 4 laptop cá nhân kỹ sư đang dùng).</p>
+                    </div>
+
+                    <!-- Nhu cầu 3 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-amber-500/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-amber-400 text-xl"><i class="fa-solid fa-industry"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">9 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">3. Chuyên dụng Sản xuất</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Các máy tính được lắp đặt đồng bộ cùng với hệ thống máy móc sản xuất.</p>
+                    </div>
+
+                    <!-- Nhu cầu 4 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-emerald-500/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-emerald-400 text-xl"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">5 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">4. Tài chính Kế toán</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Máy tính dành riêng cho Kế toán & Phòng Tài chính Kế toán.</p>
+                    </div>
+
+                    <!-- Nhu cầu 5 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-cyan-500/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-cyan-400 text-xl"><i class="fa-solid fa-network-wired"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">28 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">5. Sử dụng ERP</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Hầu như tất cả các phòng ban đều sử dụng (Chưa bao gồm 2 laptop cá nhân).</p>
+                    </div>
+
+                    <!-- Nhu cầu 6 -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group hover:-translate-y-1 transition-transform shadow-lg hover:border-slate-400/50">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 text-xl"><i class="fa-solid fa-file-word"></i></div>
+                            <span class="px-3 py-1 bg-slate-950 border border-slate-700 text-white font-bold rounded-full text-sm">9 Máy</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">6. Chỉ soạn thảo văn bản</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Hành chính Nhân sự, các máy tính lẻ tại Xưởng và một số Phòng ban.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 3: 2 HƯỚNG TRIỂN KHAI ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl shrink-0">
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">2 Hướng Triển Khai Chiến Lược</h2>
+                        <p class="text-slate-500 text-sm mt-1">Đánh giá ưu / nhược điểm của các phương án cấp phép</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    <!-- Hướng 1 -->
+                    <div class="bg-slate-900 border border-blue-500/30 rounded-3xl p-8 relative overflow-hidden flex flex-col group">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="w-16 h-16 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-6 shadow-inner border border-blue-500/20">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4">Phần mềm Thương mại<br><span class="text-blue-400 text-lg font-medium">Bản quyền trả phí</span></h3>
+                        
+                        <ul class="space-y-4 text-slate-300 mt-4 flex-1">
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span>Hoạt động <strong>cực kỳ ổn định</strong>, đầy đủ tính năng tiêu chuẩn.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                <span>Nhân viên đã quen thuộc, không tốn thời gian đào tạo.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-circle-xmark text-rose-400 mt-1"></i>
+                                <span><strong>Chi phí đầu tư rất cao</strong> (Thường là thuê bao hàng năm).</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hướng 2 -->
+                    <div class="bg-slate-900 border border-emerald-500/30 rounded-3xl p-8 relative overflow-hidden flex flex-col group">
+                        <div class="absolute top-0 right-0 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                        
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 shadow-inner border border-emerald-500/20">
+                            <i class="fa-brands fa-osi"></i>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4">Phần mềm Mã nguồn mở<br><span class="text-emerald-400 text-lg font-medium">Hoàn toàn Miễn phí</span></h3>
+                        <p class="text-sm text-slate-400 italic mb-4">Áp dụng cho các vị trí không bắt buộc dùng phần mềm đặc thù.</p>
+                        
+                        <ul class="space-y-4 text-slate-300 flex-1">
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <span><strong>Giảm triệt để chi phí</strong> bản quyền phần mềm.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i>
+                                <span>Hoàn toàn hợp pháp, tuân thủ bản quyền doanh nghiệp.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-400 mt-1"></i>
+                                <span><strong>Thách thức:</strong> Thời gian đầu CBNV sẽ phản ứng vì không quen giao diện/thao tác.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 4: SERVER ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl shrink-0">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Nhóm 1: Hệ Thống Server</h2>
+                        <p class="text-indigo-400 text-sm mt-1 font-medium">Hạ tầng chung - Quyết định hướng phát triển tương lai</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- ERP Server -->
+                    <div class="bg-slate-900 border border-slate-700 p-6 rounded-2xl flex flex-col lg:flex-row gap-6 items-start shadow-lg">
+                        <div class="bg-slate-800 p-4 rounded-xl shrink-0 text-center w-full lg:w-48">
+                            <i class="fa-solid fa-database text-4xl text-purple-400 mb-2"></i>
+                            <h4 class="font-bold text-white">ERP Server</h4>
+                            <p class="text-xs text-slate-400 mt-1">3S ERP & Kế toán Fast</p>
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <p class="text-slate-300"><span class="text-rose-400 font-semibold"><i class="fa-solid fa-circle-exclamation"></i> Hiện tại:</span> Bắt buộc mua bản quyền Windows Server + giấy phép từng người dùng (CAL) ➔ <strong>Chi phí rất cao</strong>.</p>
+                            
+                            <div class="bg-emerald-500/10 border border-emerald-500/30 p-4 rounded-xl">
+                                <p class="text-emerald-400 font-bold mb-1"><i class="fa-solid fa-lightbulb"></i> Giải pháp tối ưu:</p>
+                                <p class="text-sm text-slate-300">Nếu triển khai được phần mềm do CT.HĐQT hỗ trợ ➔ <strong class="text-emerald-400 text-lg">Chi phí bản quyền = 0đ</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Server -->
+                    <div class="bg-slate-900 border border-slate-700 p-6 rounded-2xl flex flex-col lg:flex-row gap-6 items-start shadow-lg">
+                        <div class="bg-slate-800 p-4 rounded-xl shrink-0 text-center w-full lg:w-48">
+                            <i class="fa-solid fa-folder-tree text-4xl text-blue-400 mb-2"></i>
+                            <h4 class="font-bold text-white">File Server</h4>
+                            <p class="text-xs text-slate-400 mt-1">Lưu trữ nội dung làm việc</p>
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <p class="text-slate-300"><span class="text-rose-400 font-semibold"><i class="fa-solid fa-circle-exclamation"></i> Nhu cầu hiện tại:</span> Cần Windows Server + Giấy phép người dùng.</p>
+                            <p class="text-slate-300"><i class="fa-solid fa-shuffle text-blue-400"></i> Có thể triển khai Server Linux nhưng yêu cầu cấu hình lại toàn bộ hệ thống.</p>
+                            
+                            <div class="bg-blue-500/10 border-l-4 border-blue-500 p-4 rounded-r-xl">
+                                <p class="text-blue-400 font-bold mb-1"><i class="fa-solid fa-forward-step"></i> Đề xuất hướng phát triển:</p>
+                                <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
+                                    <li>Bổ sung phần cứng, cấu hình lại File Server hiện tại.</li>
+                                    <li>Triển khai phần mềm mới thay thế File Server cũ.</li>
+                                    <li>Tiếp tục duy trì ERP Server, sau khi chuyển đổi sẽ cài đặt thành phương án dự phòng.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 5: THIẾT KẾ CÔNG NGHỆ ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 rounded-lg bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-xl shrink-0">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Nhóm 2: Thiết Kế Công Nghệ</h2>
+                        <p class="text-rose-400 text-sm mt-1 font-medium">Nhóm có chi phí đầu tư lớn nhất</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-rose-500/5 rounded-full blur-2xl"></div>
+                            <h3 class="text-white font-semibold mb-4 flex items-center gap-2 text-lg">
+                                <i class="fa-solid fa-lock text-rose-500"></i>
+                                Đặc thù phần mềm
+                            </h3>
+                            <p class="text-slate-300 leading-relaxed">
+                                Các phần mềm tiêu chuẩn của ngành (CAD/CAM, 3D...) đều là các <strong>sản phẩm độc quyền</strong>. 
+                            </p>
+                            <p class="text-slate-300 leading-relaxed mt-2">
+                                Hình thức kinh doanh: Thường bán theo gói <strong class="text-rose-400">thuê bao hàng năm</strong>, không thể mua 1 lần dùng mãi mãi.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-500/10 border border-blue-500/30 p-6 rounded-2xl relative shadow-lg">
+                            <div class="absolute -top-3 -left-3 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                Đề Xuất
+                            </div>
+                            <ul class="space-y-4 text-slate-200 mt-2">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                    <span>Đầu tư ở mức <strong>tối thiểu có thể</strong> cho các máy tính chủ chốt.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-blue-400 mt-1"></i>
+                                    <span>Kết hợp sử dụng các phần mềm mã nguồn mở để xử lý tác vụ phụ.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-laptop-code text-blue-400 mt-1"></i>
+                                    <span><strong>Các laptop mang đi hiện trường:</strong> Chỉ sử dụng phần mềm miễn phí/mã nguồn mở.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="relative h-80 rounded-2xl border border-slate-800 overflow-hidden bg-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" onerror="this.style.display='none'" alt="Thiết kế công nghệ CAD" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <p class="font-bold text-xl mb-1">Môi trường Kỹ thuật</p>
+                            <p class="text-sm text-slate-400">Yêu cầu tính đồng bộ và chính xác cao</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 6: CHUYÊN DỤNG SẢN XUẤT ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-5xl w-full mx-auto text-center">
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-amber-500/10 border-2 border-amber-500/30 text-4xl text-amber-400 mb-8 shadow-[0_0_30px_rgba(245,158,11,0.2)]">
+                    <i class="fa-solid fa-industry"></i>
+                </div>
+                
+                <h2 class="text-3xl font-bold text-white tracking-wide mb-2">Nhóm 3: Chuyên Dụng Sản Xuất</h2>
+                <p class="text-slate-400 text-sm mb-12">Máy tính điều khiển & vận hành xưởng</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-lg relative overflow-hidden">
+                        <i class="fa-solid fa-link absolute -bottom-4 -right-4 text-8xl text-slate-800/50"></i>
+                        <h4 class="text-xl font-bold text-white mb-4">Đặc tính hệ thống</h4>
+                        <p class="text-slate-300 leading-relaxed relative z-10">
+                            Các phần mềm thường <strong>đi kèm đồng bộ với máy móc</strong> thiết bị.
+                        </p>
+                        <p class="text-slate-300 leading-relaxed mt-4 relative z-10">
+                            Yêu cầu kỹ thuật cứng nhắc, hệ thống kết nối đóng ➔ Rất khó và nhiều rủi ro nếu tự ý chuyển đổi sang phần mềm miễn phí khác.
+                        </p>
+                    </div>
+
+                    <div class="bg-blue-500/10 border border-blue-500/30 p-8 rounded-3xl shadow-lg relative overflow-hidden flex flex-col justify-center">
+                        <h4 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-3">
+                            <i class="fa-solid fa-gears"></i> Phương án xử lý
+                        </h4>
+                        <div class="bg-slate-900/80 p-5 rounded-xl border border-blue-500/20">
+                            <p class="text-slate-200 text-lg font-medium leading-relaxed">
+                                Đề xuất: <strong class="text-blue-400">Phòng Kỹ Thuật</strong> chịu trách nhiệm nghiên cứu, đánh giá hệ thống và đưa ra phương án cải tiến dần từng bước, đảm bảo không ảnh hưởng đến tiến độ sản xuất.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 7: TÀI CHÍNH KẾ TOÁN ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-5xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl shrink-0">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Nhóm 4: Tài Chính Kế Toán</h2>
+                        <p class="text-emerald-400 text-sm mt-1 font-medium">Khu vực yêu cầu tính tuân thủ pháp lý 100%</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-emerald-500/30 p-8 md:p-10 rounded-3xl relative overflow-hidden shadow-2xl">
+                    <div class="absolute right-0 top-0 w-64 h-full bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none"></div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-8 border-b border-slate-700 pb-4 inline-block">Yêu cầu Bắt Buộc Sử Dụng</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-center gap-4 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-brands fa-windows text-4xl text-blue-400 w-12 text-center"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Windows Bản Quyền</h4>
+                                <p class="text-xs text-slate-400">Hệ điều hành nền tảng bảo mật</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-brands fa-microsoft text-4xl text-rose-500 w-12 text-center"></i>
+                            <div>
+                                <h4 class="font-bold text-white">MS Office Bản Quyền</h4>
+                                <p class="text-xs text-slate-400">Đảm bảo format biểu mẫu nhà nước</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-calculator text-4xl text-emerald-400 w-12 text-center"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Phần mềm Tài chính</h4>
+                                <p class="text-xs text-slate-400">PM Kế toán chính thức (Fast...)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-950/50 p-4 rounded-xl border border-slate-800">
+                            <i class="fa-solid fa-file-signature text-4xl text-amber-400 w-12 text-center"></i>
+                            <div>
+                                <h4 class="font-bold text-white">Chữ ký số</h4>
+                                <p class="text-xs text-slate-400">Token/USB bản quyền hợp pháp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 8: ERP ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl shrink-0">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Nhóm 5: Sử Dụng ERP</h2>
+                        <p class="text-cyan-400 text-sm mt-1 font-medium">Phạm vi phủ rộng nhất (28 máy tính)</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center gap-8 justify-center mt-12">
+                    <!-- Tình trạng -->
+                    <div class="bg-slate-900 border border-slate-700 p-8 rounded-2xl w-full lg:w-1/3 text-center shadow-lg">
+                        <i class="fa-solid fa-desktop text-5xl text-slate-500 mb-4"></i>
+                        <h3 class="text-lg font-bold text-white mb-2">Thực trạng Client</h3>
+                        <p class="text-slate-400 text-sm">Với các phiên bản 3S ERP & Fast hiện tại: <strong class="text-rose-400">Chỉ có thể chạy trên môi trường Windows</strong> có bản quyền.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="text-3xl text-blue-500 hidden lg:block rotate-90 lg:rotate-0">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+                    <div class="text-3xl text-blue-500 lg:hidden rotate-90 my-2">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
+
+                    <!-- Giải pháp -->
+                    <div class="bg-cyan-500/10 border-2 border-cyan-500/50 p-8 rounded-2xl w-full lg:w-1/2 text-center shadow-[0_0_30px_rgba(6,182,212,0.15)] relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-cyan-500 text-slate-950 text-xs font-bold px-4 py-1 rounded-bl-xl uppercase">Đề Xuất</div>
+                        <i class="fa-solid fa-cloud-arrow-up text-5xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-xl font-bold text-white mb-4">Chuyển Đổi Nền Tảng</h3>
+                        <ul class="text-left text-slate-200 space-y-3 inline-block">
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-cyan-400 mt-1"></i> <span>Triển khai nhanh <strong>Phiên bản Ứng dụng Web</strong> (Chạy được trên mọi HĐH).</span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-check text-cyan-400 mt-1"></i> <span>Hoặc chuyển đổi sang <strong>phần mềm do CT.HĐQT hỗ trợ</strong>.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 9: SOẠN THẢO VĂN BẢN ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-6xl w-full mx-auto">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 rounded-lg bg-slate-500/10 border border-slate-500/30 flex items-center justify-center text-slate-300 text-xl shrink-0">
+                        <i class="fa-solid fa-file-word"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-white tracking-wide">Nhóm 6: Chỉ Soạn Thảo Văn Bản</h2>
+                        <p class="text-slate-400 text-sm mt-1 font-medium">Nhóm thao tác cơ bản, ít phụ thuộc phần mềm đặc thù</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-8">Đề xuất: Chuyển đổi 100% sang Mã Nguồn Mở</h3>
+                    
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                        <!-- OS Transition -->
+                        <div class="flex items-center gap-6">
+                            <div class="text-center">
+                                <i class="fa-brands fa-windows text-5xl text-slate-600 mb-2"></i>
+                                <p class="text-slate-500 font-semibold line-through decoration-rose-500 decoration-2">Windows</p>
+                            </div>
+                            <div class="text-emerald-400 text-2xl animate-pulse"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="text-center bg-emerald-500/10 p-4 rounded-xl border border-emerald-500/30">
+                                <i class="fa-brands fa-linux text-5xl text-emerald-400 mb-2"></i>
+                                <p class="text-emerald-400 font-bold">Linux</p>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="w-px h-16 bg-slate-700 hidden md:block"></div>
+                        <div class="h-px w-full bg-slate-700 md:hidden"></div>
+
+                        <!-- Office Transition -->
+                        <div class="flex items-center gap-6">
+                            <div class="text-center">
+                                <i class="fa-brands fa-microsoft text-5xl text-slate-600 mb-2"></i>
+                                <p class="text-slate-500 font-semibold line-through decoration-rose-500 decoration-2">MS Office</p>
+                            </div>
+                            <div class="text-emerald-400 text-2xl animate-pulse"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div class="text-center bg-emerald-500/10 p-4 rounded-xl border border-emerald-500/30">
+                                <i class="fa-solid fa-file-lines text-5xl text-emerald-400 mb-2"></i>
+                                <p class="text-emerald-400 font-bold">Libre Office</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-slate-400 text-sm mt-10 italic">* Giảm thiểu chi phí lớn cho Công ty với nhóm người dùng cơ bản.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SLIDE 10: TỔNG KẾT ================= -->
+        <div class="slide">
+            <div class="slide-content max-w-4xl mx-auto flex flex-col items-center text-center">
+                <div class="bg-gradient-to-br from-blue-900/40 to-slate-900 border border-blue-500/30 p-12 rounded-[3rem] backdrop-blur-sm relative overflow-hidden shadow-2xl w-full">
+                    <div class="absolute -top-20 -right-20 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-slate-800 border-2 border-slate-700 text-4xl text-blue-400 mb-6 relative z-10 shadow-lg">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight relative z-10">Tính toán & <span class="text-gradient">Phê Duyệt</span></h2>
+                    
+                    <p class="text-xl text-slate-300 leading-relaxed relative z-10 max-w-2xl mx-auto mb-8">
+                        Dựa trên phương án chỉ đạo từ Ban Điều Hành, Bộ phận IT sẽ tiến hành <strong>tính toán chi phí chi tiết</strong> và lập kế hoạch cụ thể mua sắm / triển khai.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
+                        <button class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-full transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:-translate-y-1 w-full sm:w-auto">
+                            <i class="fa-solid fa-file-excel"></i> Xem Bảng Dự Toán (Draft)
+                        </button>
+                        
+                        <button onclick="scrollToSlide(0)" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border border-slate-600 text-slate-300 hover:text-white hover:bg-slate-800 transition-colors w-full sm:w-auto">
+                            <i class="fa-solid fa-rotate-left"></i> Xem lại từ đầu
+                        </button>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-slate-700/50 relative z-10 flex flex-col items-center justify-center gap-1">
+                        <span class="text-xs text-slate-500 uppercase tracking-widest font-bold">Thực hiện báo cáo bởi</span>
+                        <span class="text-lg text-white font-bold var-dept">Bộ phận Công nghệ Thông tin</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- HỆ THỐNG BIẾN TOÀN CỤC -->
+    <script>
+        const defaultVars = {
+            COMPANY_ABBR: "HEM EMM",
+            DEPARTMENT_NAME: "Bộ phận Công nghệ Thông tin",
+            DEPARTMENT_EN: "IT DEPARTMENT"
+        };
+
+        function applyVariables() {
+            const companyAbbr = window.COMPANY_ABBR || defaultVars.COMPANY_ABBR;
+            const deptName = window.DEPARTMENT_NAME || defaultVars.DEPARTMENT_NAME;
+            const deptEn = window.DEPARTMENT_EN || defaultVars.DEPARTMENT_EN; 
+
+            document.querySelectorAll('.var-company').forEach(el => el.innerText = companyAbbr);
+            document.querySelectorAll('.var-dept').forEach(el => el.innerText = deptName);
+            document.querySelectorAll('.var-dept-en').forEach(el => el.innerText = deptEn);
+        }
+
+        applyVariables();
+    </script>
+
+    <!-- SCRIPT ĐIỀU KHIỂN SLIDE -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const pageNumber = document.getElementById('pageNumber');
+        const dotContainer = document.getElementById('dot-container');
+        const totalSlides = slides.length;
+
+        for(let i=0; i<totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = `w-2 h-2 rounded-full transition-all duration-300 flex-shrink-0 ${i === 0 ? 'bg-blue-500 w-4' : 'bg-slate-700 hover:bg-slate-500'}`;
+            dot.onclick = () => scrollToSlide(i);
+            dotContainer.appendChild(dot);
+        }
+        const dots = dotContainer.children;
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                
+                const content = slide.querySelector('.slide-content');
+                if(content) {
+                    content.style.animation = 'none';
+                    content.offsetHeight; 
+                    content.style.animation = null; 
+                }
+
+                if(dots[index]) {
+                    dots[index].className = `w-2 h-2 rounded-full transition-all duration-300 flex-shrink-0 ${index === currentSlide ? 'bg-blue-500 w-4 shadow-[0_0_8px_rgba(59,130,246,0.5)]' : 'bg-slate-700 hover:bg-slate-500'}`;
+                }
+            });
+            
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].scrollTop = 0;
+            
+            const formattedCurrent = String(currentSlide + 1).padStart(2, '0');
+            const formattedTotal = String(totalSlides).padStart(2, '0');
+            pageNumber.innerText = `${formattedCurrent} / ${formattedTotal}`;
+        }
+
+        function scrollToSlide(index) {
+            if(index >= 0 && index < totalSlides) {
+                currentSlide = index;
+                updateSlide();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        document.getElementById('slides-container').addEventListener('click', (e) => {
+            if(e.target.tagName !== 'BUTTON' && 
+               e.target.tagName !== 'I' && 
+               e.target.tagName !== 'A' &&
+               !e.target.closest('button') &&
+               !e.target.closest('a') &&
+               window.getSelection().toString().length === 0 &&
+               e.target.classList.contains('slide')) {
+                nextSlide();
+            }
+        });
+
+        updateSlide();
+    </script>
+</body>
+</html>
